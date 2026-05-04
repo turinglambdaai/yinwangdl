@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '丘奇和图灵'
+title: "丘奇和图灵"
 author: 王垠
 created: 2013-07-13
 source: https://www.yinwang.org/posts/church-turing

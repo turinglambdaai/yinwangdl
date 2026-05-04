@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学基础班（第 4 期）报名'
+title: "计算机科学基础班（第 4 期）报名"
 author: 王垠
 created: 2021-05-10
 source: https://www.yinwang.org/posts/cs4

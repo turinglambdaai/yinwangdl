@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学阅读班（实验）'
+title: "计算机科学阅读班（实验）"
 author: 王垠
 created: 2021-02-16
 source: https://www.yinwang.org/posts/cs-reading-course

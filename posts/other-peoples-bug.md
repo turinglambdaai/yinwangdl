@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '其他人的BUG'
+title: "其他人的BUG"
 author: 王垠
 created: 2015-02-20
 source: https://www.yinwang.org/posts/other-peoples-bug

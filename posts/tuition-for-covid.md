@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学阅读班提供疫情特价'
+title: "计算机科学阅读班提供疫情特价"
 author: 王垠
 created: 2022-12-01
 source: https://www.yinwang.org/posts/tuition-for-covid

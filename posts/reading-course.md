@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学阅读班招生说明'
+title: "计算机科学阅读班招生说明"
 author: 王垠
 created: 2022-02-07
 source: https://www.yinwang.org/posts/reading-course

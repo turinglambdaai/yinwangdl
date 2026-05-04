@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学基础班（第5期，现实接轨班）招生'
+title: "计算机科学基础班（第5期，现实接轨班）招生"
 author: 王垠
 created: 2023-12-23
 source: https://www.yinwang.org/posts/cs-course-5

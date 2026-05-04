@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '几个超炫的专业词汇'
+title: "几个超炫的专业词汇"
 author: 王垠
 created: 2013-04-15
 source: https://www.yinwang.org/posts/terminology

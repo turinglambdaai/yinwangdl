@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '第一位“计算机科学少年班”学生毕业'
+title: "第一位“计算机科学少年班”学生毕业"
 author: 王垠
 created: 2021-09-16
 source: https://www.yinwang.org/posts/youth-cs-student

@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学基础班（第三期）报名'
+title: "计算机科学基础班（第三期）报名"
 author: 王垠
 created: 2021-02-15
 source: https://www.yinwang.org/posts/cs3

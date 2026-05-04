@@ -1,24 +1,26 @@
 ---
 dg-publish: false
-title: '所谓“人为错误”'
+title: "所谓“人为错误”"
 author: 王垠
 created: 2015-02-24
 source: https://www.yinwang.org/posts/human-errors
 ---
-昨天是一个让人悲哀的日子。旧金山湾区主要的上下班交通工具 Caltrain，在 24 小时之内发生三次事故，撞死三人。其中一次事故发生在 Menlo Park，一辆汽车被困在铁轨上，因为被前后的车辆堵塞而无法逃避，终于被飞驰而来的列车撞成一堆废铁。开车人被消防队员从残骸里切割出来，送往医院后不久死亡。([新闻视频](http://www.ktvu.com/story/28193228/driver-killed-in-menlo-park-caltrain-accident-was-trapped-on-tracks)）
+昨天是一个让人悲哀的日子。旧金山湾区主要的上下班交通工具 Caltrain，在 24 小时之内发生三次事故，撞死三人。其中一次事故发生在 Menlo Park，一辆汽车被困在铁轨上，因为被前后的车辆堵塞而无法逃避，终于被飞驰而来的列车撞成一堆废铁。开车人被消防队员从残骸里切割出来，送往医院后不久死亡。(<a href="http://www.ktvu.com/story/28193228/driver-killed-in-menlo-park-caltrain-accident-was-trapped-on-tracks">新闻视频</a>）
 
-![caltrain-accident1.jpg](/images/human-errors/caltrain-accident1.jpg)
+<a href="http://www.ktvu.com/story/28193228/driver-killed-in-menlo-park-caltrain-accident-was-trapped-on-tracks">
+<img src="/images/caltrain-accident1.jpg" width="90%"></a>
 
-![caltrain-accident2.jpg](/images/human-errors/caltrain-accident2.jpg)
+<img src="/images/caltrain-accident2.jpg" width="90%">
 
 我为生命的殒灭而悲哀，然而让我更加悲哀的是，每当这样的事故发生，总有人指责说是“人为错误”。比如，Twitter 上有人说这事故是因为死者没有遵守交通规则，才导致自己的汽车被困在铁轨之上，所以她死的活该。
 
-![caltrain-accident-twitter.png](/images/human-errors/caltrain-accident-twitter.png)
+<img src="/images/caltrain-accident-twitter.png" width="90%">
 
 真的是因为她不遵守交通规则吗？真的有人愿意把车停在铁轨上等死吗？也许是这规则没法遵守，或者设计得让人很容易“违反”呢？
 
 首先，规则必须要让人理解，切实可行，才能叫做规则。
 
+<img src="/images/ravenswood-ave-crossing.png" width="90%"></a>
 
 但是请看看铁轨交叉路口上的指令：“不要停在铁轨上（DO NOT STOP ON TRACKS）”，“保持路口畅通（KEEP CLEAR）”。我也不想停在铁轨上啊，可是我刚开到铁轨上，前面的车就停下来了，过不去怎么办？另外什么叫做 clear？一定要等到路口里面完全没有车才可以进去吗？如果路口里面虽然有车，然而它们都以每小时 30 英里的速度行驶？这时我还该停下来吗？如果前面车的速度不到每小时 5 英里呢？如果前面车辆貌似很快，结果我一进路口它就慢下来了怎么办？
 
@@ -26,9 +28,9 @@ source: https://www.yinwang.org/posts/human-errors
 
 如果你仔细看看卫星图，就会发现铁轨前方的道路狭窄，而且不远处有一个红绿灯。如果这个红绿灯变红，那么就有可能把直到铁轨处的车辆全都叫停。如果你熟悉湾区的道路，就知道红灯处是 82 号公路（El Camino Real），上那条路的红灯经常等很久。也就是说，可能有很多车在那里等红灯，一直到铁轨的地方！
 
-![ravenswood-ave.png](/images/human-errors/ravenswood-ave.png)
+<img src="/images/ravenswood-ave.png" width="90%"></a>
 
-如果你再仔细一点，用 Google Map 的 street view 去实地看一下那个路口，就会发现，地面上的”KEEP CLEAR”字样，其实是用来给被堵在铁轨上的车预留后路的。然后你就发现，如果后面的车不遵守 KEEP CLEAR 的指令，那么它们就会断掉铁轨上的车的退路。所以，其实不是铁轨上的车自己等死，而是后面那些不遵守 KEEP CLEAR 指令的车，把它逼上了绝路。然而就像我之前提到的，想要遵守 KEEP CLEAR 又是很模棱两可的事情，后面的车有可能以为你过得去，所以才跟上的。所以你死了，不能怪火车，不能怪你自己，不能怪前面的车，还不能怪后面的车！怪谁呢？只能怪路口的“设计”！
+如果你再仔细一点，用 Google Map 的 street view 去实地看一下那个路口，就会发现，地面上的"KEEP CLEAR"字样，其实是用来给被堵在铁轨上的车预留后路的。然后你就发现，如果后面的车不遵守 KEEP CLEAR 的指令，那么它们就会断掉铁轨上的车的退路。所以，其实不是铁轨上的车自己等死，而是后面那些不遵守 KEEP CLEAR 指令的车，把它逼上了绝路。然而就像我之前提到的，想要遵守 KEEP CLEAR 又是很模棱两可的事情，后面的车有可能以为你过得去，所以才跟上的。所以你死了，不能怪火车，不能怪你自己，不能怪前面的车，还不能怪后面的车！怪谁呢？只能怪路口的“设计”！
 
 这种路口交通规则还有一个致命的特征，那就是后果的严重性不明显，人不会敏锐的感觉到犯了错误的结果是车毁人亡。一般人都不闯红灯，因为很显然，如果你红灯不停就会被另一个方向的车撞上。可是违反这铁道路口的规则，后果不是立显的，有可能什么事也没有，也有可能呆在那里几分钟之后才出事，到时候想逃都逃不了。这就像把活青蛙放进冷水里，然后慢火加热一样，它不会立即被烫得跳出来，而会死在里面！等你慢慢的开到铁轨上，才发现前面的车不走了（因为更前面路口亮了红灯），后面的车又抵上来。过一会儿，当当当，栏杆放下来，火车来了…… 你这是在设陷阱诱捕野生动物吗？
 

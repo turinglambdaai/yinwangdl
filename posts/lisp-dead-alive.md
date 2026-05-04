@@ -1,15 +1,15 @@
 ---
 dg-publish: false
-title: 'Lisp 已死，Lisp 万岁！'
+title: "Lisp 已死，Lisp 万岁！"
 author: 王垠
 created: 2013-03-26
 source: https://www.yinwang.org/posts/lisp-dead-alive
 ---
 有一句古话，叫做“国王已死，国王万岁！”它的意思是，老国王已经死去，国王的儿子现在继位。这句话的幽默，就在于这两个“国王”其实指的不是同一个人，而你咋一看还以为它自相矛盾。今天我的话题仿效了这句话，叫做“Lisp 已死，Lisp 万岁！”希望到最后你会明白这是什么意思。
 
-首先，我想总结一下 Lisp 的优点。你也许已经知道，Lisp 身上最重要的一些优点，其实已经“遗传”到了几乎每种流行的语言身上（Java，C#，JavaScript，Python，Ruby，Haskell，……）。由于我已经在其他博文里详细的叙述过其中一些，所以现在只把这些 Lisp 的优点简单列出来（关键部分加了链接）：
+首先，我想总结一下 Lisp 的优点。你也许已经知道，Lisp 身上最重要的一些优点，其实已经“遗传”到了几乎每种流行的语言身上（Java，C#，JavaScript，Python, Ruby，Haskell，……）。由于我已经在其他博文里详细的叙述过其中一些，所以现在只把这些 Lisp 的优点简单列出来（关键部分加了链接）：
 
-* Lisp 的语法是世界上最精炼，最美观，也是语法分析起来最高效的语法。这是 Lisp 独一无二的，其他语言都没有的优点。有些人喜欢设计看起来很炫的语法，其实都是自找麻烦。为什么这么说呢，请参考这篇[谈语法](谈语法.md)。
+* Lisp 的语法是世界上最精炼，最美观，也是语法分析起来最高效的语法。这是 Lisp 独一无二的，其他语言都没有的优点。有些人喜欢设计看起来很炫的语法，其实都是自找麻烦。为什么这么说呢，请参考这篇《<a href="/posts/on-syntax">谈语法</a>》。
 * Lisp 是第一个可以在程序的任何位置定义函数，并且可以把函数作为值传递的语言。这样的设计使得它的表达能力非常强大。这种理念被 Python，JavaScript，Ruby 等语言所借鉴。
 * Lisp 有世界上最强大的宏系统（macro system）。这种宏系统的表达力几乎达到了理论所允许的极限。如果你只见过 C 语言的“宏”，那我可以告诉你它是完全没法跟 Lisp 的宏系统相提并论的。
 * Lisp 是世界上第一个使用垃圾回收（garbage collection）的语言。这种超前的理念，后来被 Java，C# 等语言借鉴。
@@ -20,7 +20,7 @@ source: https://www.yinwang.org/posts/lisp-dead-alive
 
 比如下面我定义一个函数 f，它接受一个参数 y，然后返回 x 和 y 的积。
 
-```lisp
+```
 (setq f 
       (let ((x 1)) 
         (lambda (y) (* x y))))
@@ -34,7 +34,7 @@ source: https://www.yinwang.org/posts/lisp-dead-alive
 
 如果我们在函数调用的外层定义一个 x，值为 2：
 
-```lisp
+```
 (let ((x 2))
   (funcall f 2))
 ```
@@ -43,7 +43,7 @@ source: https://www.yinwang.org/posts/lisp-dead-alive
 
 再来。我们另外定义一个 x，值为 3：
 
-```lisp
+```
 (let ((x 3))
   (funcall f 2))
 ```
@@ -52,13 +52,13 @@ source: https://www.yinwang.org/posts/lisp-dead-alive
 
 再来。如果我们直接调用：
 
-```lisp
+```
 (funcall f 2)
 ```
 
 你想这次总该得到 2 了吧？结果，出错了：
 
-```lisp
+```
 Debugger entered--Lisp error: (void-variable x)
   (* x y)
   (lambda (y) (* x y))(2)
@@ -75,7 +75,7 @@ Debugger entered--Lisp error: (void-variable x)
 
 话说回来，为什么早期的 Lisp 会使用 dynamic scoping 呢？其实这根本就不是一个有意的“设计”，而是一个无意的“巧合”。你几乎什么都不用做，它就成那个样子了。这不是开玩笑，如果你在 emacs 里面显示 f 的值，它会打印出：
 
-```lisp
+```
 '(lambda (y) (* x y))
 ```
 
@@ -83,9 +83,9 @@ Debugger entered--Lisp error: (void-variable x)
 
 简单倒是简单，麻烦事接着就来了。调用 f 的时候，比如 (funcall f 2)，y 的值当然来自参数 2，可是 x 的值是多少呢？答案是：不知道！不知道怎么办？到“外层环境”去找呗，看到哪个就用哪个，看不到就报错。所以你就看到了之前出现的现象，函数的行为随着一个完全无关的变量而变化。如果你单独调用 (funcall f 2) 就会因为找不到 x 的值而出错。
 
-那么正确的实现函数的做法是什么呢？是制造“闭包”(closure)。这也就是 Scheme，Common Lisp 以及 Python，C# 的做法。在函数定义被解释或者编译的时候，当时的自由变量（比如 x）的值，会跟函数的代码绑在一起，被放进一种叫做“闭包”的结构里。比如上面的函数，就可以表示成这个样子：(Closure ‘(lambda (y) (* x y)) ‘((x . 1)))。
+那么正确的实现函数的做法是什么呢？是制造“闭包”(closure)。这也就是 Scheme，Common Lisp 以及 Python，C# 的做法。在函数定义被解释或者编译的时候，当时的自由变量（比如 x）的值，会跟函数的代码绑在一起，被放进一种叫做“闭包”的结构里。比如上面的函数，就可以表示成这个样子：(Closure '(lambda (y) (* x y)) '((x . 1)))。
 
-在这里我用 (Closure …) 表示一个“结构”（就像 C 语言的 struct）。它的第一个部分，是这个函数的定义。第二个部分是 ‘((x . 1))，它是一个“环境”，其实就是一个从变量到值的映射（map）。利用这个映射，我们记住函数定义处的那个 x 的值，而不是在调用的时候才去瞎找。
+在这里我用 (Closure ...) 表示一个“结构”（就像 C 语言的 struct）。它的第一个部分，是这个函数的定义。第二个部分是 '((x . 1))，它是一个“环境”，其实就是一个从变量到值的映射（map）。利用这个映射，我们记住函数定义处的那个 x 的值，而不是在调用的时候才去瞎找。
 
 我不想在这里深入细节。如果你对实现语言感兴趣的话，可以参考我的另一篇博文《怎样写一个解释器》。它教你如何实现一个正确的，没有以上毛病的解释器。
 
@@ -93,7 +93,7 @@ Debugger entered--Lisp error: (void-variable x)
 
 你也许发现了，Lisp 其实不是一种语言，而是很多种语言。这些被人叫做“Lisp 家族”的语言，其实共同点只是它们的“语法”：它们都是基于 S 表达式。如果你因此对它们同样赞美的话，那么你赞美的其实只是 S 表达式，而不是这些语言本身。因为一个语言的本质应该是由它的语义决定的，而跟语法没有很大关系。你甚至可以给同一种语言设计多种不同的语法，而不改变这语言的本质。比如，我曾经给 TeX 设计了 Lisp 的语法，我把它叫做 SchTeX（Scheme + TeX）。SchTeX 的文件看起来是这个样子：
 
-```lisp
+```
 (documentclass article (11pt))
 (document
   (abstract (...))

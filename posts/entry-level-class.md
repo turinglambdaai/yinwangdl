@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学入门班报名'
+title: "计算机科学入门班报名"
 author: 王垠
 created: 2020-03-26
 source: https://www.yinwang.org/posts/entry-level-class

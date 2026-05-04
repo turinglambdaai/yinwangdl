@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '『Ground-Up Computer Science』样章'
+title: "『Ground-Up Computer Science』样章"
 author: 王垠
 created: 2021-05-11
 source: https://www.yinwang.org/posts/gucs-sample

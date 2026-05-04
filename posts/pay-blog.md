@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '博文的自愿付费方式'
+title: "博文的自愿付费方式"
 author: 王垠
 created: 2016-04-13
 source: https://www.yinwang.org/posts/pay-blog

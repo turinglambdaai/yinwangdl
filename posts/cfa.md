@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '到底是谁在欺负我们读书少？'
+title: "到底是谁在欺负我们读书少？"
 author: 王垠
 created: 2016-04-07
 source: https://www.yinwang.org/posts/cfa

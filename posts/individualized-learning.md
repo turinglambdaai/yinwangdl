@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '一对一教学计划'
+title: "一对一教学计划"
 author: 王垠
 created: 2020-04-30
 source: https://www.yinwang.org/posts/individualized-learning

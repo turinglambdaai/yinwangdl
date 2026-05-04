@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学基础班第 5 期成功结束'
+title: "计算机科学基础班第 5 期成功结束"
 author: 王垠
 created: 2024-05-03
 source: https://www.yinwang.org/posts/cs5-completed

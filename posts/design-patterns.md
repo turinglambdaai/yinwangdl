@@ -1,15 +1,15 @@
 ---
 dg-publish: false
-title: '"解密"设计模式""'
+title: "解密\"设计模式\""
 author: 王垠
 created: 2013-03-07
 source: https://www.yinwang.org/posts/design-patterns
 ---
-有些人问我，你说学习操作系统的最好办法是学习程序设计。那我们是不是应该学习一些“设计模式”（Design Patterns）。这是一个我很早就有定论，而且经过实践检验的问题，所以想在这里做一个总结。
+有些人问我，你说学习操作系统的最好办法是学习程序设计。那我们是不是应该学习一些“设计模式”（design patterns）。这是一个我很早就有定论，而且经过实践检验的问题，所以想在这里做一个总结。
 
 总的来说，如果光从字面上讲，程序里确实是有一些“模式”可以发掘的。因为你总是可以借鉴以前的经验，用来构造新的程序。你可以把这种经验叫做“模式”。可是自从《设计模式》（通常叫做 GoF，“Gang of Four”，“四人帮”）这本书在 1994 年发表以来，“设计模式”这个词有了新的，扭曲的含义。它变成了一种教条，带来了公司里程序的严重复杂化以及效率低下。
 
-![Pasted image 20230207155350.png](/images/design-patterns/Pasted%20image%2020230207155350.png)
+![Design Patterns](/images/design-patterns/design-patterns.jpeg)
 
 GoF 借鉴的是一个叫 Christopher Alexander 的建筑师的做法。Alexander 给一些建筑学里的“设计模式”起了名字，试图让建筑师们有一些“共同语言”。可惜的是，Alexander 后来自己都承认，他的实验失败了。因为这些固定的模式，并没能有效地传递精髓的知识，没能让新手成长为出色的建筑师。
 
@@ -21,7 +21,7 @@ GoF 借鉴的是一个叫 Christopher Alexander 的建筑师的做法。Alexande
 
 其实，函数式语言的研究者们早就知道 visitor pattern 是怎么得来的。如果你想知道如何从无到有，一步一步“发明”出 Java 的 visitor pattern，可以参考《A Little Java, A Few Patterns》（发表于 1997 年）。
 
-![Pasted image 20230207155403.png](/images/design-patterns/Pasted%20image%2020230207155403.png)
+![little java](/images/design-patterns/the-little-java.jpeg)
 
 而 interpreter （解释器）模式呢？看了作者们写的例子程序之后，我发现他们其实并不会写解释器，或者说他们不知道如何写出优雅的，正确的解释器。如果你想知道如何写出好的解释器，可以参考我的博文《怎样写一个解释器》。
 
@@ -29,7 +29,7 @@ GoF 借鉴的是一个叫 Christopher Alexander 的建筑师的做法。Alexande
 
 这不是我的一家之言，Peter Norvig 在 1998 年就做了一个演讲，指出在“动态语言”里面，GoF 的 20 几个模式，其中绝大部分都“透明”了。也就是说，你根本感觉不到它们的存在。这就像我刚才告诉你的。
 
-![Pasted image 20230207155418.png](/images/design-patterns/Pasted%20image%2020230207155418.png)
+![Norvig talk](/images/design-patterns/norvig-patterns.png)
 
 在这里 Norvig 的观点是正确的，不过需要小心一个概念错误。Norvig 对“静态语言”的概念是有局限性的。有的静态语言其实也能传递函数作为参数，而且不像 Java 那样什么都得放进 class 里。这样的静态语言，其实也可以避免大部分 GoF 设计模式。而“动态语言”这个概念，在程序语言的理论里面，其实是没有明确的定义的。“动态语言”其实也能进行某些“静态类型检查”。不过在 1998 年，我还是个啥都不懂的屁孩，所以这里就不跟 Norvig 大叔计较了。
 

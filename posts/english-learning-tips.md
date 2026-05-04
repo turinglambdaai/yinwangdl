@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '英语学习的一些经验'
+title: "英语学习的一些经验"
 author: 王垠
 created: 2020-03-06
 source: https://www.yinwang.org/posts/english-learning-tips
@@ -63,6 +63,10 @@ source: https://www.yinwang.org/posts/english-learning-tips
 
 而且英文的技术资料质量和数量都比中文多很多，还有很多非常有价值的视频在网络上，所以学好英语是至关重要的。希望大家都能提高英语水平，多看英语文献。
 
-完。
+**完。**
 
-如果你喜欢这篇文章，可以到这里[[付费]]。
+---
+
+如果你喜欢这篇文章，可以扫描这篇文章的专用支付宝二维码付费。
+
+<img src="/images/alipay-20200308.jpg" width="15%">

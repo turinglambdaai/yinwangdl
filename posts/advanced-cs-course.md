@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学进阶班招生'
+title: "计算机科学进阶班招生"
 author: 王垠
 created: 2022-02-22
 source: https://www.yinwang.org/posts/advanced-cs-course

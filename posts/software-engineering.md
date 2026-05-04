@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '所谓软件工程'
+title: "所谓软件工程"
 author: 王垠
 created: 2015-06-07
 source: https://www.yinwang.org/posts/software-engineering
@@ -24,7 +24,6 @@ source: https://www.yinwang.org/posts/software-engineering
 想起这些借口我就想起一个笑话：两夫妻发现床上有跳蚤，身上被咬了好多包。去买了号称“杀伤率 100 %”的跳蚤药，撒了好多在床上。第二天早上起来，发现仍然被咬了好多新的包。妻子责怪丈夫，说他没看说明书就乱撒。结果丈夫打开说明书一看，内容如下：
 
 > 本跳蚤药使用方法：
-> 
 > 1. 抓住跳蚤
 > 2. 掰开跳蚤的嘴
 > 3. 把药塞进跳蚤嘴里

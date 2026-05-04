@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '空气清新剂的噩梦'
+title: "空气清新剂的噩梦"
 author: 王垠
 created: 2023-02-03
 source: https://www.yinwang.org/posts/air-freshener-nightmare

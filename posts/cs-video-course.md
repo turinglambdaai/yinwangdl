@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学视频班课程介绍'
+title: "计算机科学视频班课程介绍"
 author: 王垠
 created: 2025-05-12
 source: https://www.yinwang.org/posts/cs-video-course

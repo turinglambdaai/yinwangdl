@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '正面思维的误区'
+title: "正面思维的误区"
 author: 王垠
 created: 2016-05-22
 source: https://www.yinwang.org/posts/positive-thinking
@@ -13,7 +13,8 @@ source: https://www.yinwang.org/posts/positive-thinking
 
 然而这不是今天的主题，我今天想谈的是所谓“正面思维”。很多人没有意识到，盲目的正面思维，其实是一个很严重的问题。正面并没有什么问题，快乐是好事，然而它们应该是结果，而不应该是目的。如果一个社会需要刻意去提倡“正面”和“快乐”，去宣扬它们，通过舆论压力或者暴力，迫使每个人都“正面思维”，那就有严重问题了。文化大革命的时候，人们的思维可真是很正面啊，各种歌颂…… 你要是敢说任何不好听的话，立即被打成反革命右派。可是今天，我发现这种文革似的“正面思潮”，又有抬头之势。其实，它在美国已经泛滥成灾，以至于有人专门写了一本书来批判这种“正面思维”：
 
-![Pasted image 20231218102827.png](/images/positive-thinking/Pasted%20image%2020231218102827.png)
+<a href="https://www.amazon.com/Bright-sided-Relentless-Promotion-Positive-Undermined-ebook/dp/B002SKDGQ0">
+<img src="http://upload-images.jianshu.io/upload_images/68562-28fd151402f7b345.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200"></a>
 
 当你遇到困难的时候，美国人喜欢说：“别担心，一切都会好起来的……”，“要专注于事物好的方面……”，“只要你努力，就会有好结果……”，“困难是临时的，面包会有的，Go 语言会改进的……”，“危机会过去的，经济会持续增长的⋯⋯”，“美国是世界上最伟大的国家，上帝保佑美利坚……” 看看这本书，你就知道这些说法有多大的欺骗性。整个美国，其实都沉浸在人们不切实际的“正面幻想”之中。
 
@@ -25,7 +26,7 @@ source: https://www.yinwang.org/posts/positive-thinking
 
 你知道为什么自从小布什做总统以来，美国的正面思维产业越来越红火了吗？因为小布什本来就是拉拉队长（cheerleader）出生，他以前的工作就是给大家加油鼓气的。小布什要求美国人民，一定要正面，一定要认为美国是世界上最伟大的国家，一定要认为美国人民是上帝的宠儿！;-)
 
-![Pasted image 20231218103004.png](/images/positive-thinking/Pasted%20image%2020231218103004.png)
+![](http://upload-images.jianshu.io/upload_images/68562-8c0c6feb3e7cffc8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
 在 Cornell 和 Google 的时候，我饱尝了盲目的正面思维所带来的危害。Cornell 这学校有个奇怪的现象，跟同学聊天时，如果你想打听某个教授的学术或者为人，得到的回应必然是：“他好牛！” “好厉害！” “非常聪明！” 之类的语言。你听不到任何人说不好的方面，比如：“他讲课像是背书”，“他的研究没有实质意义”，“他的学生都很累”之类的负面信息。所以在 Cornell，你无法从同学那里得到任何信息，每个人都饱尝了与某些教授打交道的辛酸，可是每个人都把那些秘密藏在心底。他们对你说：“嗯，他很厉害，他的研究很伟大……”
 
@@ -33,10 +34,11 @@ source: https://www.yinwang.org/posts/positive-thinking
 
 Cornell 这个学校，就是缺乏这种有益的负面评价。你总是听说每个教授都很牛，人都很好，…… 然而当你真正跟他们接触，就发现事实并非如此。你一次次的跳入火坑，然后才开始希望，要是开头的时候听到一些负面的信息，该多好。可是每个人表面上都是那么的 positive，每个人都认为 negative 是错误的心理，每个人都在强装笑容。这是一个多么可怕的地方！
 
-Google 的气氛非常类似于 Cornell。Google 员工吃饭时，谈论每个项目或者团队，都带着玫瑰色的光环，仿佛 Google 做的一切都是美好的，先进的，有前途的。在每个星期的 TGIF（Tell Googlers It’s Friday）大会上，founder 们都在大讲台上宣布各种好消息，而对坏消息闭口不提或者一笔带过。下面的 Google 员工们群情激昂，对一些小不点的事情各种欢呼鼓掌尖叫，跟传销大会似的。事实上，Google 内部有许多穷途末路的项目。表面看上去很厉害的样子，等你进去才发现是死路一条，垂死挣扎。项目领导平时紧紧张张，生怕上面来人调查，把自己的项目杀掉。在公司内部搞各种政治，东拉西扯建立各种依赖关系，这样自己的项目才得以生存。
+Google 的气氛非常类似于 Cornell。Google 员工吃饭时，谈论每个项目或者团队，都带着玫瑰色的光环，仿佛 Google 做的一切都是美好的，先进的，有前途的。在每个星期的 TGIF（Tell Googlers It's Friday）大会上，founder 们都在大讲台上宣布各种好消息，而对坏消息闭口不提或者一笔带过。下面的 Google 员工们群情激昂，对一些小不点的事情各种欢呼鼓掌尖叫，跟传销大会似的。事实上，Google 内部有许多穷途末路的项目。表面看上去很厉害的样子，等你进去才发现是死路一条，垂死挣扎。项目领导平时紧紧张张，生怕上面来人调查，把自己的项目杀掉。在公司内部搞各种政治，东拉西扯建立各种依赖关系，这样自己的项目才得以生存。
 
 这种虚伪的正面氛围，存在于很多的美国公司，员工每个星期都被领导打各种鸡血针，保持激昂向上的状态。我曾经跟英国，法国，德国，意大利，瑞典，波兰等国家的同事聊天，他们都暗自嘲笑美国人，说过度正面，传销式的群情激昂，吃错药了一样，确实是美国文化的一大特色。欧洲人比较务实，不搞这套，好的就说好，坏的就批评或者嘲笑，直率坦荡。当然，我不能说所有美国公司都有这种问题，所以我仍然存在希望，找到稍微实在点的公司。
 
 盲目的正面思维，忽略问题，并不能解决问题。你必须看到负面的事实，才有可能避免困难，得到好的结果。正面思维和浮夸的气氛，正在侵蚀 Google 和很多其它美国公司。为了看清楚正面思维的危害性，我推荐你看看这本书，名叫『负面思维的威力』：
 
-![Pasted image 20231218102927.png](/images/positive-thinking/Pasted%20image%2020231218102927.png)
+<a href="http://www.amazon.com/Power-Negative-Thinking-Unconventional-Achieving/dp/054402771X">
+<img src="http://upload-images.jianshu.io/upload_images/68562-f879b3a439066457.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200"></a>

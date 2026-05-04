@@ -1,6 +1,6 @@
 ---
 dg-publish: false
-title: '计算机科学集体班（第二期）报名'
+title: "计算机科学集体班（第二期）报名"
 author: 王垠
 created: 2020-09-24
 source: https://www.yinwang.org/posts/cs-class2
