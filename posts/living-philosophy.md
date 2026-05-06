@@ -135,7 +135,7 @@ source: https://www.yinwang.org/posts/living-philosophy
 
 聪明一点的人都会使用一种好东西，叫做筐子。筐子是如此的有用，以至于我总是在考虑某个地方是不是该有一个筐子。我的衣橱里有各种大小的筐子，它们分门别类的容纳我的衣物：袜子，内裤，T 恤，毛巾，…… 还有一个脏衣服筐，一个小的脏袜子筐。还有一个筐子里面铺上一张很舒服的毛巾，给我的猫睡觉用，这样他就不会睡我的其他筐子，搞得全是猫毛 :P
 
-<img src="/images/cat-in-basket2.jpg" width="240">
+<img src="/images/living-philosophy/cat-in-basket2.jpg" width="240">
 
 我的客厅里和厨房里也有各种筐子。分门别类的放置各种物品：书籍，遥控器，背包，食物，调料，…… 我还特别在出门的地方放几个筐子，这样我出门需要的东西都可以放在那里。比如上班用的电脑包，雨伞，帽子，钥匙等等。
 
@@ -241,7 +241,7 @@ source: https://www.yinwang.org/posts/living-philosophy
 
 我家里只有一种盆子，那就是“足疗盆”。我发现洗脸池和浴缸都不能达到这个功效，所以我买了一个。放上一盆热水，加上舒缓筋骨的浴盐，放在漂亮的地毯和毛巾上面，把脚放进去，猫咪在旁边陪伴，真是一种惬意的享受 :)
 
-<img src="/images/foot-bath.jpg" width="300">
+<img src="/images/living-philosophy/foot-bath.jpg" width="300">
 
 ### 洗碗
 

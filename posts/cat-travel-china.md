@@ -5,7 +5,7 @@ author: 王垠
 created: 2017-07-06
 source: https://www.yinwang.org/posts/cat-travel-china
 ---
-<img src="/images/monet-inflight1.jpg" width="320">
+<img src="/images/cat-travel-china/monet-inflight1.jpg" width="320">
 
 经过一番折腾，我和小莫奈已经顺利到达成都家里。在此我感谢各位朋友给我的信息和指点。第一次带宠物回国的人，不免面临困惑和压力，所以我想把我的经验总结一下。
 
@@ -103,13 +103,13 @@ USDA APHIS Veterinary Services SFO Port
 
 我买的是[这个](https://www.amazon.com/gp/product/B00KMQPGK6/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1)侧面可以伸出来一块扩展空间的宠物包。事实证明，它的大小差不多合适，伸出来的那一块在飞机上也起了点作用。
 
-<img src="/images/monet-carrier2.png" width="320">
+<img src="/images/cat-travel-china/monet-carrier2.png" width="320">
 
 这个猫包上面和前面各有一道门，我感觉上面这道门对于飞机旅行是很重要的。因为过安检的时候，你得把猫抱出来跟你一起过，而不能让他经过 X 光机。由于猫害怕外面的环境，如果你从前面那道小门可能很难把他拽出来。
 
 我把这包放在家里，敞开门，把小莫奈最喜欢的那个毛巾垫在里面。把一个玩具隧道对着侧面门口，用绳子逗他穿过隧道进猫包。后来我就发现它有时候晚上会在里面睡觉。另外我还做了一些演习，用这个包把他带上车，开车到不远的公园里，下车拎着转了一圈，然后回家。传说这样他会更加信任这个包，知道进了这个包不会去兽医那里，也不会去其它什么可怕的地方 :P
 
-<img src="/images/monet-carrier1.jpg" width="320">
+<img src="/images/cat-travel-china/monet-carrier1.jpg" width="320">
 
 我还以为经过这一番训练，把小莫奈放进去应该很顺利了，结果出发当天却花了差不多半个小时才把他骗进去！我从来没有花这么长时间才把他放进包里，看来他意识到将要发生什么了…… :P
 
@@ -117,13 +117,13 @@ USDA APHIS Veterinary Services SFO Port
 
 我选的是靠窗的座位，事实证明这是最好的选择。这包横着放在座位前面，会挡掉中间座位乘客大约 10 厘米的放脚空间。
 
-<img src="/images/monet-inflight2.jpg" width="320">
+<img src="/images/cat-travel-china/monet-inflight2.jpg" width="320">
 
 （请忽略右边的蓝色外套，它并没有占空间，猫包的右侧已经抵住前面座位的支撑架了。）
 
 在起飞之前我很客气的跟邻座的人表示抱歉，并告诉她起飞之后我会把这个包竖着放，这样就不占她放脚的地方了。起飞之后，我把包竖过来，两只脚分在两边，就这样凑合了 14 个小时。
 
-<img src="/images/monet-inflight3.jpg" width="320">
+<img src="/images/cat-travel-china/monet-inflight3.jpg" width="320">
 
 ### 过安检
 

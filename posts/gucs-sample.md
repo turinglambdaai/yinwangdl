@@ -5,7 +5,7 @@ author: 王垠
 created: 2021-05-11
 source: https://www.yinwang.org/posts/gucs-sample
 ---
-<img src="/images/gucs-cover.jpg" width="32%">
+<img src="/images/gucs-sample/gucs-cover.jpg" width="32%">
 
 经过两个月的阅读班实验，我的计算机科学入门教材已经完成了前面 6 章的草稿，还剩最后两章正在继续写。这本书暂命名为『Ground-Up Computer Science』，就是“从地而起”，不需要其它基础的意思。
 

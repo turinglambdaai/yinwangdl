@@ -69,4 +69,4 @@ source: https://www.yinwang.org/posts/english-learning-tips
 
 如果你喜欢这篇文章，可以扫描这篇文章的专用支付宝二维码付费。
 
-<img src="/images/alipay-20200308.jpg" width="15%">
+<img src="/images/english-learning-tips/alipay-20200308.jpg" width="15%">

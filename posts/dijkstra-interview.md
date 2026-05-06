@@ -5,7 +5,7 @@ author: 王垠
 created: 2014-02-18
 source: https://www.yinwang.org/posts/dijkstra-interview
 ---
-<a href="http://v.youku.com/v_show/id_XNjc1MDMzNDg4.html"><img src="/images/dijkstra-interview.jpg" width="70%"></a>
+<a href="http://v.youku.com/v_show/id_XNjc1MDMzNDg4.html"><img src="/images/dijkstra-interview/dijkstra-interview.jpg" width="70%"></a>
 
 （也可以访问 <a href="http://www.youtube.com/watch?v=RCCigccBzIU">YouTube</a> 或者从源地址下载 <a href="http://www.cs.utexas.edu/users/EWD/video-audio/NoorderlichtVideo.html">MPEG1</a>，300M）
 

@@ -81,4 +81,4 @@ source: https://www.yinwang.org/posts/wisdom-of-intelligence
 
 如果你喜欢这篇文章，可以扫描这篇文章的专用支付宝二维码付费。
 
-<img src="/images/alipay-20200323.jpg" width="15%">
+<img src="/images/wisdom-of-intelligence/alipay-20200323.jpg" width="15%">

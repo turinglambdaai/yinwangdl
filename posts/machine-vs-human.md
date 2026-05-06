@@ -25,7 +25,7 @@ source: https://www.yinwang.org/posts/machine-vs-human
 
 怎样才算是“理解了物体”呢？至少，你得知道它是什么形状的，有哪些组成部分，各部分的位置和边界在哪里，大概是什么材料做成的，有什么性质。这样你才能有效的对它采取行动，达到需要的效果。否则这个物体只是一个方框上面加个标签，不能精确地进行判断和操作。
 
-<img src="/images/ssd-road.jpg" width="60%">
+<img src="/images/machine-vs-human/ssd-road.jpg" width="60%">
 
 想想面对各种日常事物的时候，你的脑子里出现的是它们的名字吗？比如你拿起刀准备切水果，旁边没有人跟你说话，你的脑子里出现了“刀”这个字吗？一般是没有的。你的脑子里出现的不是名字，而是“常识”。常识不是文字，而是一种抽象而具体的数据。
 
@@ -47,7 +47,7 @@ source: https://www.yinwang.org/posts/machine-vs-human
 
 这个“观察/理解”的过程发生的如此之快，眨眼间就完成了，以至于很多人都没察觉到其中“理解成分”的存在。所以我们现在放慢这个过程，来一个慢镜头特写，看看到底发生了什么。假设你从来没见过下面这个东西，你知道它是什么吗？
 
-<img src="/images/mars-rover.jpg" width="50%">
+<img src="/images/machine-vs-human/mars-rover.jpg" width="50%">
 
 一个从没见过这东西的人，也会知道这是个“车”。为什么呢？因为它有轮子。为什么你知道那是轮子呢？仔细一想，因为它是圆的，中间有轴，所以好像能在地面上滚动。为什么你知道那是“轴”呢？我就不继续折腾你了，自己想一下吧。所有这些分析都是“视觉理解”所产生的，而这些理解依赖于你一生积累的经验，也就是我所谓的“常识”。
 
@@ -73,55 +73,55 @@ source: https://www.yinwang.org/posts/machine-vs-human
 
 人的视觉系统比摄像头有趣的多。很多人都看过“光学幻觉”（optical illusion）的图片，它们从一个角度揭示了人的视觉系统背后在做什么。比如下图本来是一个静态的图片，可是你会感觉有很多暗点在白线的交叉处，但如果你仔细看某一个交叉处，暗点却又不见了。这个幻觉很经典，被叫做 Herman grid，在神经科学界被广泛研究。稍后我还会提到这个东西。
 
-<img src="/images/herman-grid.jpg" width="40%">
+<img src="/images/machine-vs-human/herman-grid.jpg" width="40%">
 
 本来是静态图片，你却感觉它在转。
 
-<img src="/images/wheel-rotate.jpg" width="60%">
+<img src="/images/machine-vs-human/wheel-rotate.jpg" width="60%">
 
 本来上下两块东西是一样的颜色，可是看起来下面的颜色却要浅一些。如果你用手指挡住中间的高亮部分，就会发现上下两块的颜色其实是一样的。
 
-<img src="/images/samecolor.jpg" width="50%">
+<img src="/images/machine-vs-human/samecolor.jpg" width="50%">
 
 另一个类似的幻觉，是著名的“Abelson 棋盘幻觉”。图中 A 和 B 两个棋盘格子的颜色是一样的，你却觉得 A 是黑色，而 B 是白色。不信的话你可以用软件把这两块格子从图片上切下来，挨在一起对比一下。如果你好奇这是为什么，可以参考这篇[文章](https://www.brainhq.com/brain-resources/brain-teasers/adelsons-same-color-illusion)。
 
-<img src="/images/chessboard-illusion.jpg" width="50%">
+<img src="/images/machine-vs-human/chessboard-illusion.jpg" width="50%">
 
 在下图里，你会觉得看见了一个黑色的倒三角形，可是其实它并不存在。
 
-<img src="/images/kanizsa-triangle.jpg" width="30%">
+<img src="/images/machine-vs-human/kanizsa-triangle.jpg" width="30%">
 
 很多的光学幻觉都说明人的视觉系统不是简单的摄像头一样的东西，它具有某些特殊功能。这些特殊功能和机制导致了这些幻觉。这使得人类视觉不同于机器，使得人能够提取出物体的结构信息，而不是只看到像素。
 
 提取物体的拓扑结构特征，这就是为什么人可以理解抽象画，漫画，玩具。虽然世界上没有猫和老鼠长那个样子，一个从来没看过《猫和老鼠》动画片的小孩，却知道这是一只猫和一只老鼠，后面有个房子。你试试让一个没有拿《猫和老鼠》剧照训练过的深度学习模型来识别这幅图？
 
-<img src="/images/tom-and-jerry.jpg" width="50%">
+<img src="/images/machine-vs-human/tom-and-jerry.jpg" width="50%">
 
 更加抽象的玩具，人也能识别出它们是哪些人物。头和四肢都变成了方的，居然还是觉得很“像”。你不觉得这很神奇吗？
 
-<img src="/images/brickheadz.jpg" width="50%">
+<img src="/images/machine-vs-human/brickheadz.jpg" width="50%">
 
 人脑理解“拓扑”的概念，这使得人能够不受具体像素干扰而正确处理各种物体。对拓扑结构的理解使得人对物体的识别非常准确，甚至可以在信息不完整，模糊，扭曲的情况下工作，在恶劣的天气环境下，有反光，有影子的情况下也能识别物体。
 
 说到反光，你有想过机器要如何才能识别出场景里有一面镜子或者玻璃吗？如果场景中有反光的物体，比如镜子，平静的水面，镀铬的物品，神经网络（CNN）那种依靠像素滤镜训练出来的函数还会有用吗？要知道它们看到的像素，可能有一大片是通过镜面反射形成的，所以无法通过局部的纹理识别出这种情况来。
 
-<img src="/images/chicago-bean.jpg" width="50%">
+<img src="/images/machine-vs-human/chicago-bean.jpg" width="50%">
 
 这是个现实的问题。自动车或者机器人要如何知道前面的路面上有积水或者结冰了？它们要如何知道从水面反射过来的镜像不是真实的物体？比如，它们如何知道下图里路面上的倒影不是真正的树呢？要知道，倒影的像素纹理，跟真实的场景可能是非常相似的。
 
-<img src="/images/wet-road.jpg" width="50%">
+<img src="/images/machine-vs-human/wet-road.jpg" width="50%">
 
 人是通过对光的理解，各种常识来识别镜子，玻璃，地上的水和冰的存在。一个不理解光和水的性质的机器，它能察觉这些东西的存在吗？靠像素分析能知道这些？要知道，这些东西在某些地方出现，可以是致命的危险。
 
 很有趣的事情，理解光线的反射和折射，似乎已经固化到了每个动物的视觉系统里面。我观察到这一点，是因为我的卧室和客厅之间的橱柜门上有两面大镜子。我的猫在卧室里，能够从镜子里看见我在客厅拿着逗猫绳。他冲过来的时候却不会撞到镜子上面，而是出了卧室门立马转一个角度，冲向我的方向。我每次看到他敏捷的动作都会思考，他是如何知道镜子的存在呢？他是如何知道镜子里的猫就是他自己，而不是另一只猫？
 
-<img src="/images/monet-mirror.jpg" width="36%">
+<img src="/images/machine-vs-human/monet-mirror.jpg" width="36%">
 
 ### 人脑会构造事物的 3D 模型
 
 说了光，再来说影吧。画过素描的人都知道，开头勾勒出的轮廓是没有立体感的，然后你往恰当的位置加一些阴影，就有了立体感。所以动物的视觉系统里存在对影子的分析处理，而且这种功能我们似乎从来没需要学习，生下来就有。“立体视觉”是如此强烈的固化到了我们的头脑里，一旦产生了立体感，你就很难再看见平面的像素。
 
-<img src="/images/pencil-egg.jpg" width="40%">
+<img src="/images/machine-vs-human/pencil-egg.jpg" width="40%">
 
 靠着光和影的组合，人和动物能得到很多信息。比如上图，我们不但看得出这是一个立体的鸡蛋，而且能推断出鸡蛋下面是一个平面，可能是一张桌子，因为有阴影投在了上面。
 
@@ -131,13 +131,13 @@ source: https://www.yinwang.org/posts/machine-vs-human
 
 再来一个关于绘画的话题。学画的初期，很多人都发现画“透视”特别困难。所谓透视就是“近大远小”。本来房子的几堵墙都是长方形，是一样高的，可是你得把远的那一边画短一些，而且相关部分的比例都要画对，就像照片上那样，所以墙就成了梯形的。房顶，窗户等，也全都得做相应的调整。你得这样画，看画的人才会感觉是对的，不然就会感觉哪里不对劲，不真实。
 
-<img src="/images/drawing-perspective.jpg" width="60%">
+<img src="/images/machine-vs-human/drawing-perspective.jpg" width="60%">
 
 这件事真的很难，大部分人（包括我）一辈子都没学会画透视。虽然拿起笔来量一下，我确实看到远的那一边要短一些，可是我的脑子似乎会“自动纠错”，让我认为它们都是一样长的。所以要是光靠眼睛徒手作画，我会把那些边都画成一样长。我似乎永远学不会画画！
 
 画透视是如此困难的事情，以至于 16 世纪的德国画家[丢勒]([https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer](https://en.wikipedia.org/wiki/Albrecht_Dürer))为此设计了一种专门的设备。
 
-<img src="/images/durer-perspective-machine.jpg" width="60%">
+<img src="/images/machine-vs-human/durer-perspective-machine.jpg" width="60%">
 
 你可能没有想到，这个使得我们学画困难的罪魁祸首，其实是人类视觉系统的一项重要功能，它帮助我们理解身边的环境。虽然眼睛看到的物体是近大远小，可是人脑会自动调整它们在你“头脑里的长度”，所以你知道它们是一样长的。
 

@@ -15,7 +15,7 @@ source: https://www.yinwang.org/posts/purely-functional
 
 每一种宗教都有一个神秘的，体现自己“精神”的徽标。Haskell 的是这个样子：
 
-<img src="/images/haskell-logo.jpg" width="240">
+<img src="/images/purely-functional/haskell-logo.jpg" width="240">
 
 当一个初学者进入 Haskell 的 IRC 聊天室的时候，老手们会极其耐心地问答他的问题。他们告诉他，Haskell 社区是最友好，最不宗教，最讲科学和理性的社区。可是久而久之，你发现其实不是那个样子。他们对你友好，当且仅当你没有指出 Haskell 的致命缺陷。如果你知道了那些缺陷，要跟他们讨论的时候，就会发现一切都变了。他们会说，你懂不起！我们是科学家！如果你不承认这一点，我们就杀了你！:p
 

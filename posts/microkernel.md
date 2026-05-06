@@ -7,7 +7,7 @@ source: https://www.yinwang.org/posts/microkernel
 ---
 不知怎么的，最近“微内核 vs 宏内核”又成了热门话题。这场争论从 1992 年开始……
 
-<img src="/images/minix-flamewar.jpg" width="56%">
+<img src="/images/microkernel/minix-flamewar.jpg" width="56%">
 
 ### 前言
 
@@ -217,7 +217,7 @@ WY：代码在这里：http://os.inf.tu-dresden.de/L4/LinuxOnL4
 <p></p>
 WY：L4 的做法是 1) 小参数用寄存器传递，不切换某些寄存器。2) 大型参数把内存映射到接收进程，跟我之前设想的一样。这样避免了拷贝。然后采用了“direct process switch”，“lazy scheduling”降低了调度开销。现代处理器的 tagged TLB 之类也大大降低了进程切换开销。
 
-<img src="/images/direct-message-copy.jpg" width="56%">
+<img src="/images/microkernel/direct-message-copy.jpg" width="56%">
 
 WY：上图是 direct message copy。先把接收进程的目的地址映射到发送进程的地址空间，然后发送进程往里拷贝。所以其实仍然有一次拷贝，并不像我理想的 OS 那样直接就能传递对象引用，完全不用拷贝。Pass-by-value vs pass-by-reference。但这比起 Linux 似乎开销是一样的。
 </div>

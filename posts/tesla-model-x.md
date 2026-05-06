@@ -7,7 +7,7 @@ source: https://www.yinwang.org/posts/tesla-model-x
 ---
 Tesla 即将推出的 SUV（Model X），不但继承了以上提到的 Model S 的各种问题（触摸屏，门把，……），而且还制造了新的问题。Model X 具有一个别出心裁的车门设计，这车子看起来像一只展翅的鸟：
 
-<img src="/images/model-x-door.jpg" width="90%">
+<img src="/images/tesla-model-x/model-x-door.jpg" width="90%">
 
 这样开的车门貌似更省空间，方便在狭窄的地方开门，而且看起来更酷，有点像 McLaren 或者 Lamborghini。然而这样的设计，在我看来有以下几个问题：
 
@@ -23,11 +23,11 @@ Tesla 即将推出的 SUV（Model X），不但继承了以上提到的 Model S 
 
 我比较无语…… 如何揭开扬声器的盖子？你需要随时在车里准备好榔头和改锥吗？螺丝藏在哪里的？要知道，用户可不是 Tesla 雇佣的机械师。这对于车祸逃生是非常不利的设计。如果撞坏了电源，后面的人恐怕无法在合理时间之内逃离。
 
-<img src="/images/falcon-wing-door-powerless.png" width="80%">
+<img src="/images/tesla-model-x/falcon-wing-door-powerless.png" width="80%">
 
 ### 雨雪天气的麻烦
 
-<img src="/images/suv-in-snow.jpg" width="80%">
+<img src="/images/tesla-model-x/suv-in-snow.jpg" width="80%">
 
 - 车门升起时，车的后部上方有很大的空挡。下雨或者下雪的时候，雨雪会乘着车门张开的时候，大量飘进车里。
 - 当车门升起来的时候，夹在门缝里的灰尘和渣滓会掉进车里。车顶上如果有积雪，也会掉进去。设想一下，下雪天开了一会车，打开后门，结果车顶上的雪都掉在后面的人头上了……
@@ -38,13 +38,13 @@ Tesla 即将推出的 SUV（Model X），不但继承了以上提到的 Model S 
 
 在顶棚很低的车库里可能会碰到天花板。这是一个很现实的问题，因为很多车库旁边的空间很多，顶棚却很低。比如，这次我到洛杉矶和拉斯维加斯旅游，经常遇到这样的车库：
 
-<img src="/images/garage-low-roof.jpg" width="80%">
+<img src="/images/tesla-model-x/garage-low-roof.jpg" width="80%">
 
 总的说来，在非常狭窄的地方开门，其实并不是什么很需要解决的事情。有钱买 Model X 的人，难道会经常把车停在狭窄的夹缝里吗？为了这种不常见的应用，用得着花这么大功夫设计个车门吗？就算你能开门，人出去之后挤不挤得出去，是另外一回事。如果地方实在太窄，你完全可以让后面的人先下车，然后再进车位。
 
 另外，滑动式的车门同样可以解决这个问题，根本用不着花大成本来实现升起来的车门。
 
-<img src="/images/suv-sliding-door.jpg" width="80%">
+<img src="/images/tesla-model-x/suv-sliding-door.jpg" width="80%">
   
 如果你知道，Model X 的车身宽度为 81.6 英寸，比 Hummer H2, Cadillac Escalade 和 Ford F-150 这样的庞然大物还要宽，你就会发现真正的问题不在于空间不够，而是在于这车实在太宽了。有多少人愿意开这么宽的车，是一个问题。
 
@@ -53,14 +53,14 @@ Tesla 即将推出的 SUV（Model X），不但继承了以上提到的 Model S 
 
 - 顶棚不再能安装货架。不知道滑雪板和 kayak 之类该绑在哪里。这降低了 Model X 作为一个 SUV（Sport Utility Vehicle）的使用价值。
 
-  <img src="/images/suv-kayak.jpg" width="80%">
+  <img src="/images/tesla-model-x/suv-kayak.jpg" width="80%">
 
 - 后门上不再能放随身物品。这样后面的乘客会不是很方便。
 
-  <img src="/images/suv-back-door.png" width="80%">
+  <img src="/images/tesla-model-x/suv-back-door.png" width="80%">
 
 ### 制造和维修的问题
 
 - 这种车门机械非常复杂，容易出问题，维修起来很麻烦。制造起来也很麻烦，以至于一家很有经验的，为奔驰和通用提供配件的德国设备厂商，都没法满足 Tesla 的要求。请参考这篇[新闻](http://www.theverge.com/2016/1/20/10800140/tesla-lawsuit-hoerbiger-model-x-falcon-wing-door)。
 
-  <img src="/images/falcon-wing-door-machinery.png" width="80%">
+  <img src="/images/tesla-model-x/falcon-wing-door-machinery.png" width="80%">

@@ -9,6 +9,6 @@ source: https://www.yinwang.org/posts/pay-blog
 
 1. 支付宝（32 元）：
 
-   <img src="/images/alipay-32.jpg" width="200">
+   <img src="/images/pay-blog/alipay-32.jpg" width="200">
 
 3. PayPal：请点击[[付款链接](http://paypal.me/yinwang0/5)]

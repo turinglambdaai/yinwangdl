@@ -9,7 +9,7 @@ source: https://www.yinwang.org/posts/travel-wisdom
 
 ### 不用硬壳旅行箱
 
-<img src="/images/hard-case.jpg" width="240">
+<img src="/images/travel-wisdom/hard-case.jpg" width="240">
 
 这次回国发现硬壳的旅行箱非常流行，似乎占了绝大多数。有些甚至是金属外壳加铆钉材料，就像电影里的那种炸弹箱。下面有四个轮子，开口是从一半的位置而不是最上面。我很纳闷为什么大家用这种箱子。
 
@@ -35,7 +35,7 @@ source: https://www.yinwang.org/posts/travel-wisdom
 
 ### 不带 Crocs 塑料鞋出门
 
-<img src="/images/crocs.png" width="240">
+<img src="/images/travel-wisdom/crocs.png" width="240">
 
 说到拖鞋…… 由于一些历史原因，我喜欢用 Crocs 大头塑料鞋当拖鞋用。旅行的时候也带着它。但是后来我发现 Crocs 的鞋在箱子里很占空间，而且很不实用。
 
@@ -53,7 +53,7 @@ source: https://www.yinwang.org/posts/travel-wisdom
 
 ### 避免登机口排队
 
-<img src="/images/airport-line.jpg" width="240">
+<img src="/images/travel-wisdom/airport-line.jpg" width="240">
 
 我总也不明白，还没有广播叫大家开始登机呢，为什么总有很多人喜欢在登机口排好队，等着上飞机。一架飞机上的人，不管你先上还是后上，都是大家一起起飞，一起着陆。你以为排在前面就可以早点到达目的地吗？据我唯一一次试验，这种队可以排你 40 分钟的样子，那次我觉得自己真是疯了傻了。
 

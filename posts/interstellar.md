@@ -5,7 +5,7 @@ author: 王垠
 created: 2014-11-12
 source: https://www.yinwang.org/posts/interstellar
 ---
-<img src="/images/interstellar.png" height=400>
+<img src="/images/interstellar/interstellar.png" height=400>
 
 （Spoiler 警告，本文含有大量具体情节！）
 

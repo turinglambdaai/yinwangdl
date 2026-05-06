@@ -129,16 +129,15 @@ def replace_image_paths(content: str, slug: str) -> str:
     content = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", md_replacer, content)
 
     # Replace HTML images: <img src="/images/...">
+    # Groups: 1=prefix, 2=src=", 3=URL, 4="suffix>
     def html_replacer(m):
         prefix = m.group(1)
-        url = m.group(2)
-        suffix = m.group(3)
-        if url.startswith("/images/"):
+        src_attr = m.group(2)
+        url = m.group(3)
+        suffix = m.group(4)
+        if url.startswith("/"):
             filename = os.path.basename(url)
-            return f'{prefix}src="/images/{slug}/{filename}"{suffix}'
-        elif url.startswith("/"):
-            filename = os.path.basename(url)
-            return f'{prefix}src="/images/{slug}/{filename}"{suffix}'
+            return f'{prefix}{src_attr}/images/{slug}/{filename}{suffix}'
         return m.group(0)
 
     content = re.sub(r"(<img[^>]*)(src=[\"\x27])([^\"\x27]+)([\"\x27][^>]*>)", html_replacer, content)

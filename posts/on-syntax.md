@@ -5,7 +5,7 @@ author: 王垠
 created: 2013-03-08
 source: https://www.yinwang.org/posts/on-syntax
 ---
-<img src="/images/lisp_cycles.png" width="95%">
+<img src="/images/on-syntax/lisp_cycles.png" width="95%">
 
 使用和研究过这么多程序语言之后，我觉得几乎不包含多余功能的语言，只有一个：Scheme。所以我觉得它是学习程序设计最好的入手点和进阶工具。当然 Scheme 也有少数的问题，而且缺少一些我想要的功能，但这些都瑕不掩瑜。在用了很多其它的语言之后，我觉得 Scheme 真的是非常优美的语言。
 
@@ -53,7 +53,7 @@ Lisp （Scheme 的前身）是世界上第二老的程序语言。最老的是 F
 
 同样的公式，传统的数学符号是这个样子：
 
-<img src="/images/deriv-math.png">
+<img src="/images/on-syntax/deriv-math.png">
 
 这是什么玩意啊？`d` 除以 `dx`，然后乘以 `x` 的平方？
 

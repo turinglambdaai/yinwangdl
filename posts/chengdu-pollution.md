@@ -7,21 +7,21 @@ source: https://www.yinwang.org/posts/chengdu-pollution
 ---
 今天是大年初一，本来不想写东西的。可是一大早起来，就看到这样的天空，空气质量又是“重度污染”。连大年初一都不放过我，出不了门，所以我这个年也不想过了，决定写点什么，在我被这雾霾灭口之前 :)
 
-<img src="/images/chengdu-air.jpg" width="600">
+<img src="/images/chengdu-pollution/chengdu-air.jpg" width="600">
 
-<img src="/images/chengdu-heavy-polution.jpg" width="240">
+<img src="/images/chengdu-pollution/chengdu-heavy-polution.jpg" width="240">
 
 三个月以来，成都的天空一直是这个样子，每一天都像是世界末日。当你还能看见太阳的时候就更诡异了，大白天的看到太阳，是一个朦胧的火球，空气都是红色橙色的，红得可怕。这只有在好莱坞的外星人入侵地球大片里才能看到。
 
 别搞错了，这不是普通的四川盆地的雾气，而是严重污染的雾霾。成都的这三个月，几乎每一天都有严重的雾霾。查看空气质量历史数据，成都的冬天就没几天空气是优良的，这比北京上海都要差很多。北京和上海每个月还是会有几天空气差的时候，然而大部分时候的空气，还是基本可以接受的。而成都呢？三个月来空气好的时候，掰着指头都数的出来。
 
-<img src="/images/chengdu-air-history.jpg" width="300">
+<img src="/images/chengdu-pollution/chengdu-air-history.jpg" width="300">
 
 很多人以为成都只有冬天有空气污染，还不以为然的样子。冬天有三个月之久，每天这样的雾霾，已经是非常难受的。而且成都也许不只是冬天才有污染。你想想，北方冬天雾霾严重，是因为北方需要烧煤产生暖气。成都冬天根本没有集体供暖，不需要烧煤，那么这雾霾是怎么来的？
 
 夏天的时候好点，然而那是因为成都夏天下很多的雨，雨水会部分的洗掉空气中的颗粒物。成都夏天的雨多得让人讨厌，每天都得带伞。如果下这么多的雨，在其它城市空气早就变优了，然而成都夏天的空气，也只能算勉强能活下去而已。
 
-<img src="/images/chengdu-air-summer.jpg" width="300">
+<img src="/images/chengdu-pollution/chengdu-air-summer.jpg" width="300">
 
 所以这污染应该是不分季节常年进行的，并不是冬天才有。
 
@@ -29,7 +29,7 @@ source: https://www.yinwang.org/posts/chengdu-pollution
 
 1. 纽约，东京那么大的城市，那么多汽车在跑来跑去，或者堵在那里。为什么纽约和东京每天空气质量都超级好？pm2.5 基本都是 20 以下。所以看来雾霾并不是汽车尾气造成的。
 
-   <img src="/images/new-york-air.jpg" width="240">
+   <img src="/images/chengdu-pollution/new-york-air.jpg" width="240">
 
    另外我还观察到一个现象，那就是成都的污染会在晚上加重。也许白天是轻度污染，到了晚上就是重度污染，然后天亮了又开始好一点。如果污染是汽车产生的，为何会在晚上三更半夜的加重？要知道半夜的时候路上几乎没有车的！所以这又说明污染不是汽车产生的。
 
@@ -48,19 +48,19 @@ source: https://www.yinwang.org/posts/chengdu-pollution
 
    你只需要上网搜一下，就基本有了线索：原来那些颗粒物是附近的工厂排出来的。工厂为了掩盖排烟的真相，都选择在晚上偷排，这样就不那么明显了。近一点的人可以看见，远一点的，混在夜幕中就看不见了。
    ​
-   <img src="/images/chengdu-air-cause1.jpg" width="240">
+   <img src="/images/chengdu-pollution/chengdu-air-cause1.jpg" width="240">
    ​
-   <img src="/images/chengdu-air-cause2.jpg" width="240">
+   <img src="/images/chengdu-pollution/chengdu-air-cause2.jpg" width="240">
 
 3. 再研究一下雾霾数据地图，就会发现他们说的那些位置比较准确。污染最严重的地区，是成都的郊区：双流，郫县，崇州，彭州。如果你按时间观察，会发现那些地方晚上就开始污染加重。
 
-   <img src="/images/chengdu-air-map.jpg" width="240">
+   <img src="/images/chengdu-pollution/chengdu-air-map.jpg" width="240">
 
    再来印证一下。退一万步说，如果汽车能造成颗粒物污染，那种乡下郊区晚上会有那么多汽车在跑，造成那么严重的污染吗？显然不可能有那么多车在跑。那么是什么造成污染呢？那不很明显了吗。
 
    下图是我的一个朋友来成都时，晚上到达双流机场给我发来的图片。我自己出去玩，回来的时候在双流机场也有类似的遭遇：空气无比之差，一下飞机就感觉到窒息！
 
-   <img src="/images/shuangliu-air.jpg" width="240">
+   <img src="/images/chengdu-pollution/shuangliu-air.jpg" width="240">
 
    ​
 
@@ -69,16 +69,16 @@ source: https://www.yinwang.org/posts/chengdu-pollution
 
    喂，中央专家组！快来看这里！:)
    ​
-   <img src="/images/chengdu-air-cause3.jpg" width="240">
+   <img src="/images/chengdu-pollution/chengdu-air-cause3.jpg" width="240">
 
 5. （大年初七补充）从大年初二下午开始，成都和附近地区的空气突然变好。一直处于优良的状态。全国的空气质量也有大幅度改观，绝大部分都是绿的。不要觉得这可喜可贺。这正好说明了雾霾不是自然现象，也不是因为汽车，而是人为造成的。想想为什么春节空气会突然变好呢？因为工厂放假了！等春节假期结束，你再看看 :)
    ​
-   <img src="/images/new-year-chengdu-air-history.jpg" width="240">
+   <img src="/images/chengdu-pollution/new-year-chengdu-air-history.jpg" width="240">
 
-   <img src="/images/new-year-chengdu-air.jpg" width="240">
+   <img src="/images/chengdu-pollution/new-year-chengdu-air.jpg" width="240">
    ​
 
-   <img src="/images/new-year-china-air.jpg" width="240">
+   <img src="/images/chengdu-pollution/new-year-china-air.jpg" width="240">
    ​
 
 成都人对于雾霾，几乎是集体的无知。大部分人不知道雾霾的危害，严重污染的时候，大街上也没有几个戴口罩的。有一次看我戴口罩，出租车司机对我说：“成都空气常年是这样的。戴口罩干嘛？适应了就好了……”
@@ -89,7 +89,7 @@ source: https://www.yinwang.org/posts/chengdu-pollution
 
 当然，我猜雾霾的危害不止于慢性咽炎之类的疾病，虽然慢性咽炎已经够痛苦的了。上网搜一下，就会发现 pm2.5 颗粒物还会导致心脏病，肺癌等。患上这些病而死亡的概率是以 10μg/m3 的浓度变化递增的，而且不管是短期或者长期接触 pm2.5 都会起作用。这让我想起了 9-11 的大楼倒塌之后，附近人员吸入粉尘之后导致的各种奇怪的肿瘤和癌症……
 
-<img src="/images/pm-health-effect.jpg" width="400">
+<img src="/images/chengdu-pollution/pm-health-effect.jpg" width="400">
 
 （[资料来源](https://www.arb.ca.gov/research/health/healthup/may02.pdf))
 
@@ -99,7 +99,7 @@ source: https://www.yinwang.org/posts/chengdu-pollution
 
 另外很多人还有一种误解，他们以为在室内就没有污染了。我也曾经以为那些颗粒物在室内就会沉降下来，从而没有室外厉害。我错了…… 使用 pm2.5 测试仪，你可以确认室内的污染其实是和室外差不多的，就算你把门窗关起来也不会有太大区别。下图就是我在一个商场里的饭店吃东西时的测试结果。在外面测也是差不多的结果。
 
-<img src="/images/indoor-air-quality.jpg" width="400">
+<img src="/images/chengdu-pollution/indoor-air-quality.jpg" width="400">
 
 想来也是啊，2.5 微米那么小的颗粒物，是很轻的，是很不容易沉降下来的。所以呢，不要以为你在外面有地方可以躲！除了在自己家里密封好门窗，打开空气净化机，否则你的室内空气质量跟室外不会有很大差别。
 

@@ -16,7 +16,7 @@ source: https://www.yinwang.org/posts/talk-is-not-cheap
 
 “Talk is cheap. Show me the code.” 这句话出自 Linus Torvalds 在 linux-kernel mailing list 的一个[回帖](https://lkml.org/lkml/2000/8/25/132)。如果你看了我对微内核和线程的[分析](/posts/microkernel)，也许会明白 Jamie Lokier 的话其实是有意义的。如果保持开放的心态，继续的探讨也许会给 Linux 内核带来突破性的改进，然而这种可能性却被 Linus 一句“Talk is cheap. Show me the code.” 给扼杀了。
 
-<a href="https://lkml.org/lkml/2000/8/25/132"><img src="/images/talk-is-cheap.jpg" width="80%"></a>
+<a href="https://lkml.org/lkml/2000/8/25/132"><img src="/images/talk-is-not-cheap/talk-is-cheap.jpg" width="80%"></a>
 
 Linus 可能当时不耐烦了，你知道这家伙的性格…… 我相信他不是每次都说这样的话，但因为 Linus 形象太高大，这话就被人记下来，作为可以反复拿出来压制言论的手段。管你表达什么，他们都有一句万能的台词：“Talk is cheap. Show me the code.”
 

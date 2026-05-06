@@ -17,7 +17,7 @@ source: https://www.yinwang.org/posts/design
 
 如果你跟我一样关心设计，却发现身边的人喜欢显示自己能搞懂复杂的东西，跟你说容易的东西都是菜鸟用的，那么你需要一个朋友。书籍是人类最好的朋友，因为它的作者可以跨越时间和空间的限制，给你最需要的支持和鼓励。这就是当我阅读这本 1988 年出版的《<a href="http://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C">The Design of Everyday Things</a>》（简称 DOET）时的感觉。我觉得，终于有人懂我了！有趣的是，它的作者 Don Norman 曾经是 Apple Fellow，也是《<a href="http://web.mit.edu/~simsong/www/ugh.pdf">The Unix-Haters Handbook</a>》一书序言的作者。
 
-<img src="/images/doet.jpg">
+<img src="/images/design/doet.jpg">
 
 DOET 不但包含并且支持了我的博文《<a href="/posts/hacker-culture">黑客文化的精髓</a>》以及《<a href="/posts/pl-and">程序语言与……</a>》里的基本观点，而且提出了比《<a href="/posts/user-friendliness">什么是“对用户友好”</a>》更精辟可行的解决方案。
 

@@ -7,7 +7,7 @@ source: https://www.yinwang.org/posts/trap-of-intelligence
 ---
 上次买了个<a href="http://www.jianshu.com/p/b501a1675f4d">任天堂 3DS</a>游戏机，觉得里面的游戏很无聊，所以第二天就把游戏机连同游戏一起，转手倒卖给了别人。从那天之后，我开始琢磨一个问题——到底是什么让我觉得一个游戏好玩或者不好玩。我似乎对事物有一种很特别的品味，很多别人说“好玩”，“有趣”的游戏或者电影，我一看就觉得很无趣，或者很自虐。我一生中玩过最好玩的游戏，其实没有几个，可能掰着手指头都数得出来：<a href="http://braid-game.com">Braid</a>，<a href="http://en.wikipedia.org/wiki/Limbo_%28video_game%29">Limbo</a>，<a href="http://en.wikipedia.org/wiki/Klonoa:_Door_to_Phantomile">Klonoa</a>（風のクロノア door to phantomile），《<a href="https://itunes.apple.com/cn/app/ji-nian-bei-gu/id728293409">纪念碑谷</a>》，<a href="http://en.wikipedia.org/wiki/Metal_Gear_Solid">Metal Gear Solid</a>，……
 
-<img src="/images/Klonoa.jpg">
+<img src="/images/trap-of-intelligence/Klonoa.jpg">
 
 如果你觉得我智商太高，所以才觉得很多游戏没有挑战性，不好玩，那么你其实并不了解我。我并不是一个“智商达人”，我不追求挑战性。我觉得很多游戏缺乏的不是挑战性和“难度”，而是设计的巧妙。很多游戏我根本没法玩过关，却只是觉得呆板，繁琐，老套，公式化。我并不会因为游戏玩不过关，作业做不出来，或者书看不懂而沮丧。恰恰相反，我认为我的智力根本就不应该是用来干这些事情的。如果有事情让我觉得沮丧，我一般都认为是这个事情有问题，而不是我有问题。如果说我也有错的话，那么我的错误就在于选择了参与这项活动，我根本不应该做这件事情。这就是为什么我大部分时候都比一般人开心。
 

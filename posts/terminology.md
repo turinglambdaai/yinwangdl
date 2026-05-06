@@ -77,12 +77,12 @@ source: https://www.yinwang.org/posts/terminology
 
 * <a href="http://en.wikipedia.org/wiki/Higgs_boson">Higgs-Bugson</a>
 
-  <img src="/images/higgs-boson.jpg">
+  <img src="/images/terminology/higgs-boson.jpg">
 
   一种假想中的 bug。它一般是跟据运行日志的少数记录和零星含糊的用户报告推测出来，但是在开发员的机器上很难重现。
 
 * <a href="http://en.wikipedia.org/wiki/Heisenberg_uncertainty_principle">Heisenbug</a>
 
-  <img src="/images/heisenbug.png">
+  <img src="/images/terminology/heisenbug.png">
 
   当你试图观察它的时候就突然消失或者改变行为特征的 bug。
