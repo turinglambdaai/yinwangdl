@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C 编译器优化的 Bug - 王垠博客备份</title>
+  <meta name="description" content="王垠博客文章备份，自动爬取存档">
+  <link rel="canonical" href="/posts/compiler-bug/">
+  <meta name="google-adsense-account" content="ca-pub-3215512126020129">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3215512126020129"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="page-layout">
+    <aside class="ad-sidebar ad-sidebar--left">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3215512126020129"
+        data-ad-slot="7014497615"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </aside>
+    <div class="page-body">
+      <header class="site-header">
+        <div class="container">
+          <div class="site-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 2c1.85 0 3.55.63 4.9 1.69L14.3 8.8a4.97 4.97 0 0 0-4.6 0L7.1 5.69A7.96 7.96 0 0 1 12 4zM4 12c0-1.85.63-3.55 1.69-4.9L8.8 9.7a4.97 4.97 0 0 0 0 4.6l-3.11 2.6A7.96 7.96 0 0 1 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69l2.6-3.11a4.97 4.97 0 0 0 4.6 0l2.6 3.11A7.96 7.96 0 0 1 12 20zm6.31-3.1L15.2 14.3a4.97 4.97 0 0 0 0-4.6l3.11-2.6A7.96 7.96 0 0 1 20 12c0 1.85-.63 3.55-1.69 4.9z"/></svg>
+          </div>
+          <h1 class="site-title">王垠博客备份</h1>
+          <p class="site-desc">自动备份 <a href="https://www.yinwang.org">yinwang.org</a> 博客文章 | <a href="https://github.com/jrtxio/yinwangdl">GitHub</a></p>
+        </div>
+      </header>
+      <main class="container">
+        <article class="post">
+  <a href="/" class="post-back">&larr; 返回列表</a>
+  <header class="post-header">
+    <h1>C 编译器优化的 Bug</h1>
+    <div class="post-meta">
+      <span>王垠</span>
+      
+      <span class="sep">&middot;</span>
+      <time>2016-10-12</time>
+      
+      
+      <span class="sep">&middot;</span>
+      <a href="https://www.yinwang.org/posts/compiler-bug" target="_blank" rel="noopener">原文</a>
+      
+    </div>
+  </header>
+  <div class="post-content">
+    <p>一个朋友向我指出一个最近他们发现的 GCC 编译器优化过程（加上 -O3 选项）里的 bug，导致他们的产品出现诡异的行为。这使我想起以前见过的一个 GCC 的 bug。当时很多编译器专家认为那种做法是正确的，跟他们说不清楚。简言之，这种有问题的优化，喜欢利用 C 语言的“未定义行为”（undefined behavior）进行推断，最后得到奇怪的优化结果。</p>
+<p>这类优化过程的推理方式都很类似，他们使用一种看似严密而巧妙的推理，例如：“现在有一个整数 <code>x</code>，不知道是多少。但 <code>x</code> 出现在一个条件语句里面，如果 <code>x &gt; 1</code>，那么程序会进入未定义行为，所以我们可以断定 <code>x</code> 的值必然小于或者等于 1，所以现在我们利用 <code>x ≤ 1</code> 这个事实来对相关代码进行优化……”</p>
+<p>看似合理，却是不正确的。举一个具体的例子吧。这篇 Chris Lattner 写于 2011 年的<a href="http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_14.html">文章</a>里面就含有这样一个优化。文中指出，编译器利用“未定义行为”进行优化，是合理的，对于性能是很重要的，并且举出这样一个例子：</p>
+<pre><code class="language-c">void contains_null_check(int *P) {
+  int dead = *P;
+  if (P == 0)
+    return;
+  *P = 4;
+}
+</code></pre>
+<p>这例子跟我之前看到的 GCC bug 不大一样，但大致是类似的推理方式：这个函数依次经过这样两个优化步骤（RNCE 和 DCE），之后得出“等价”的代码：</p>
+<pre><code class="language-c">void contains_null_check_after_RNCE(int *P) {
+  int dead = *P;
+  if (false)  // P 在上一行被访问，所以这里 P 不可能是 null
+    return;
+  *P = 4;
+}
+</code></pre>
+<pre><code class="language-c">void contains_null_check_after_RNCE_and_DCE(int *P) {
+  // int dead = *P;    // 死代码
+  // if (false)        // 死代码
+  //   return;         // 死代码
+  *P = 4;
+}
+</code></pre>
+<p>他的推理方式是这样：</p>
+<ol>
+<li>首先，因为在 <code>int dead = *P</code> 里面，指针 <code>P</code> 的地址被访问，如果程序顺利通过了这一行而没有出现未定义行为（比如当掉），那么之后 <code>P</code> 就不可能是 null，所以我们可以把 <code>P == 0</code> 优化为 <code>false</code>。</li>
+<li>因为条件是 <code>false</code>，所以整个 if 语句都是死代码，被删掉。</li>
+<li><code>dead</code> 变量赋值之后，没有被任何其它代码使用，所以对 <code>dead</code> 的赋值是死代码，可以消去。</li>
+</ol>
+<p>最后函数就只剩下一行代码 <code>*P = 4</code>。然而经我分析，发现这个转换是错误的，而不只是像他说的“存在安全隐患”。现在我来考考你，你知道这为什么是错的吗？庆幸的是，现在如果你把这代码输入到 Clang，就算加上 -O3 选项，它也不会给你进行这个优化。这也许说明他们也许已经意识到了这个错误。</p>
+<p>我写这篇文章的目的其实是想告诉你，不要盲目相信编译器的优化变换都是正确的。无论它看起来多么的合理，只要打开优化之后你的程序出现不合理的行为，你就不能排除编译器进行了错误优化的可能性。Lattner 指出这样的优化完全符合 C 语言的标准，但就算你符合国际标准，也有可能是错的。有时候你得相信自己的直觉……</p>
+
+  </div>
+</article>
+
+      </main>
+      <footer class="site-footer">
+        <div class="container">
+          <p>内容版权归原作者所有 | 本站仅作备份存档</p>
+        </div>
+      </footer>
+    </div>
+    <aside class="ad-sidebar ad-sidebar--right">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3215512126020129"
+        data-ad-slot="7014497615"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </aside>
+  </div>
+</body>
+</html>

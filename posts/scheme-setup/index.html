@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheme 编程环境的设置 - 王垠博客备份</title>
+  <meta name="description" content="王垠博客文章备份，自动爬取存档">
+  <link rel="canonical" href="/posts/scheme-setup/">
+  <meta name="google-adsense-account" content="ca-pub-3215512126020129">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3215512126020129"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="page-layout">
+    <aside class="ad-sidebar ad-sidebar--left">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3215512126020129"
+        data-ad-slot="7014497615"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </aside>
+    <div class="page-body">
+      <header class="site-header">
+        <div class="container">
+          <div class="site-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 2c1.85 0 3.55.63 4.9 1.69L14.3 8.8a4.97 4.97 0 0 0-4.6 0L7.1 5.69A7.96 7.96 0 0 1 12 4zM4 12c0-1.85.63-3.55 1.69-4.9L8.8 9.7a4.97 4.97 0 0 0 0 4.6l-3.11 2.6A7.96 7.96 0 0 1 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69l2.6-3.11a4.97 4.97 0 0 0 4.6 0l2.6 3.11A7.96 7.96 0 0 1 12 20zm6.31-3.1L15.2 14.3a4.97 4.97 0 0 0 0-4.6l3.11-2.6A7.96 7.96 0 0 1 20 12c0 1.85-.63 3.55-1.69 4.9z"/></svg>
+          </div>
+          <h1 class="site-title">王垠博客备份</h1>
+          <p class="site-desc">自动备份 <a href="https://www.yinwang.org">yinwang.org</a> 博客文章 | <a href="https://github.com/jrtxio/yinwangdl">GitHub</a></p>
+        </div>
+      </header>
+      <main class="container">
+        <article class="post">
+  <a href="/" class="post-back">&larr; 返回列表</a>
+  <header class="post-header">
+    <h1>Scheme 编程环境的设置</h1>
+    <div class="post-meta">
+      <span>王垠</span>
+      
+      <span class="sep">&middot;</span>
+      <time>2013-04-11</time>
+      
+      
+      <span class="sep">&middot;</span>
+      <a href="https://www.yinwang.org/posts/scheme-setup" target="_blank" rel="noopener">原文</a>
+      
+    </div>
+  </header>
+  <div class="post-content">
+    <img src="/images/scheme-setup/paredit1.gif" width="80%">
+<p>介绍了这么久的 Scheme，却没有讲过如何配置一个高效的 Scheme 的编程环境。有些人开始学习 Scheme 的时候感觉无从下手，所以今天讲一下它的配置。</p>
+<p>Scheme 的配置有很多种方式，我不想介绍太多东西，免得有人看花了眼，所以这里只介绍一下我自己的配置。我不大喜欢像 <a href="http://www.neilvandyke.org/quack">Quack</a> 一类的复杂的环境，因为它们经常有很多多余的功能，却缺少我想要的功能。一旦我想修改它们，又到处出问题。我的配置很简约，我用它写了几千行的超高难度的代码，翻来覆去的改，感觉效率非常高，也没有觉得缺少什么特别重要的东西。</p>
+<p>现在我就一步一步的介绍我的配置。</p>
+<h3>安装 Scheme</h3>
+<h4>Chez Scheme</h4>
+<p>世界上最快，最成熟可靠的 Scheme 实现是 R. Kent Dybvig 所作的 Chez Scheme。它可以把 Scheme 编译成机器代码，运行速度非常高。Chez Scheme 曾经是商业软件，价格昂贵，然而现在却开源了，并且可以免费使用。你可以在这里下载 Chez Scheme 的源代码：</p>
+<p><a href="https://github.com/cisco/ChezScheme">https://github.com/cisco/ChezScheme</a></p>
+<p>编译安装很快很方便，在 Linux 和 Mac 系统基本就是这样：</p>
+<pre><code>./configure
+make
+sudo make install
+</code></pre>
+<p>整个编译安装过程只需要 30 秒。这是世界上最快编译自己全套系统的编译器。</p>
+<h4>Racket</h4>
+<p>如果你对性能没有特别高的需求，主要用于学习，也可以用 Racket。它可以在这里下载：</p>
+<p><a href="http://racket-lang.org">http://racket-lang.org</a></p>
+<p>安装应该很容易。Ubuntu 也自带了 Racket，所以可以直接让系统安装它。</p>
+<h3>设置 Paredit mode</h3>
+<p>我编辑 Scheme 的时候都用 Emacs。我使用一个叫做 Paredit mode 的插件。它可以让你“半结构化”式的编辑 Scheme 和其它的 Lisp 文件。开头你可能会有点不习惯，可是一旦习惯了，你就再也离不开它。</p>
+<p>Paredit mode 可以在这里下载：</p>
+<p><a href="http://mumble.net/~campbell/emacs/paredit.el">http://mumble.net/~campbell/emacs/paredit.el</a></p>
+<p>下载之后，把它放到一个目录里，比如 ~/.emacs.d，然后打开 ~/.emacs 配置文件，加入如下设置：</p>
+<pre><code class="language-lisp">(add-to-list 'load-path &quot;~/.emacs.d&quot;)
+(autoload 'paredit-mode &quot;paredit&quot;
+  &quot;Minor mode for pseudo-structurally editing Lisp code.&quot;
+  t)
+</code></pre>
+<p>这样，只要你使用 M-x paredit-mode 就可以自动载入这个模式。具体的操作方式可以看它的说明（按 C-h m 查看“模式帮助”），我下面也会简单说一下。</p>
+<h3>设置 scheme mode</h3>
+<p>我一般就用系统自带的 Scheme 模式，叫 cmuscheme。但是为了方便，我自己写了几个函数，用于在执行 Scheme 代码的时候自动启动解释器，并且打开解释器窗口。你基本只需要把下面的代码拷贝到你的 .emacs 文件里就行：</p>
+<pre><code class="language-lisp">;;;;;;;;;;;;
+;; Scheme 
+;;;;;;;;;;;;
+
+(require 'cmuscheme)
+
+;; push scheme interpreter path to exec-path
+(push &quot;/Applications/Racket/bin&quot; exec-path)
+
+;; scheme interpreter name
+(setq scheme-program-name &quot;racket&quot;)
+
+;; bypass the interactive question and start the default interpreter
+(defun scheme-proc ()
+  &quot;Return the current Scheme process, starting one if necessary.&quot;
+  (unless (and scheme-buffer
+               (get-buffer scheme-buffer)
+               (comint-check-proc scheme-buffer))
+    (save-window-excursion
+      (run-scheme scheme-program-name)))
+  (or (scheme-get-process)
+      (error &quot;No current process. See variable `scheme-buffer'&quot;)))
+
+(defun switch-other-window-to-buffer (name)
+    (other-window 1)
+    (switch-to-buffer name)
+    (other-window 1))
+
+(defun scheme-split-window ()
+  (cond
+   ((= 1 (count-windows))
+    (split-window-vertically (floor (* 0.68 (window-height))))
+    ;; (split-window-horizontally (floor (* 0.5 (window-width))))
+    (switch-other-window-to-buffer &quot;*scheme*&quot;))
+   ((not (member &quot;*scheme*&quot;
+               (mapcar (lambda (w) (buffer-name (window-buffer w)))
+                       (window-list))))
+    (switch-other-window-to-buffer &quot;*scheme*&quot;))))
+
+(defun scheme-send-last-sexp-split-window ()
+  (interactive)
+  (scheme-split-window)
+  (scheme-send-last-sexp))
+
+(defun scheme-send-definition-split-window ()
+  (interactive)
+  (scheme-split-window)
+  (scheme-send-definition))
+
+(add-hook 'scheme-mode-hook
+  (lambda ()
+    (paredit-mode 1)
+    (define-key scheme-mode-map (kbd &quot;&lt;f5&gt;&quot;) 'scheme-send-last-sexp-split-window)
+    (define-key scheme-mode-map (kbd &quot;&lt;f6&gt;&quot;) 'scheme-send-definition-split-window)))
+</code></pre>
+<p>我的配置会在加载 Scheme 文件的时候自动载入 Paredit mode，并且把 F5 键绑定到“执行前面的 S 表达式”。这样设置的目的是，我只要把光标移动到一个 S 表达式之后，然后用一根手指头按 F5，就可以执行程序。够懒吧。</p>
+<h3>Paredit mode 的简单使用方法</h3>
+<p>Paredit mode 是一个很特殊的模式。它起作用的时候，你不能直接修改括号。这样所有的括号都保持完整的匹配，不可能出现语法错误。但是这样有一个问题，如果你要把一块代码放进另一块代码，或者从里面拿出来，就不是很方便了。</p>
+<p>为此，Paredit mode 提供了几个非常高效的编辑方式。我平时只使用两个：</p>
+<ol>
+<li>
+<p><code>C-right</code>: 也就是按住 Ctrl 再按右箭头。它的作用是让光标右边的括号，“吞掉”下一个 S 表达式。</p>
+<p>比如，<code>(a b c) (d e)</code>。你把光标放在 <code>(a b c)</code> 里面，然后按 <code>C-right</code>。结果就是 <code>(a b c (d e))</code>。也就是把 <code>(d e)</code> 被整个“吞进”了 <code>(a b c)</code> 里面。</p>
+</li>
+<li>
+<p><code>M-r</code>: 去掉外层代码。</p>
+<p>这在你需要去掉外层的 let 等结构的时候非常有用。比如，如果你的代码看起来是这样：</p>
+<pre><code class="language-scheme">(let ([x 10])
+ (* x 2))
+</code></pre>
+<p>当你把光标放在 <code>(* x 2)</code> 的最左边，然后按  <code>M-r</code>，结果就变成了</p>
+<pre><code class="language-scheme">(* x 2)
+</code></pre>
+<p>也就是把外面的 <code>(let ([x 10]) ...)</code> 给“掀掉”了。</p>
+<p>其它的一些按键虽然也有用，不过我觉得这两个是最有用的，甚至不可缺少的。有些其他的自动匹配括号的模式，没有提供这种按键，所以用起来很别扭。</p>
+</li>
+</ol>
+<h3>设置括号颜色</h3>
+<p>很多人看见 Lisp 就怕了，就是因为它看起来括号太多。可是这样的语法，却是有很大的好处的（参考这篇博文《谈语法》）。如果你真的觉得括号碍眼，你可以稍微调整一下括号的颜色，比如淡灰色。这样括号看起来就没有那么显眼了。</p>
+<p>你只需要下载这个 el，放到你的 .emacs.d:</p>
+<p><a href="https://www.dropbox.com/s/v0ejctd1agrt95x/parenface.el">https://www.dropbox.com/s/v0ejctd1agrt95x/parenface.el</a></p>
+<p>然后在 .emacs 里面加入两行：</p>
+<pre><code class="language-lisp">(require 'parenface)
+(set-face-foreground 'paren-face &quot;DimGray&quot;)
+</code></pre>
+<p>然后再打开 Scheme 代码的时候，你就会看到是这个样子：</p>
+<img src="/images/scheme-setup/scheme-paren.jpeg" width="95%">
+<p>好了，这就是我写 Scheme 的所有配置了。希望这些有所帮助。</p>
+
+  </div>
+</article>
+
+      </main>
+      <footer class="site-footer">
+        <div class="container">
+          <p>内容版权归原作者所有 | 本站仅作备份存档</p>
+        </div>
+      </footer>
+    </div>
+    <aside class="ad-sidebar ad-sidebar--right">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3215512126020129"
+        data-ad-slot="7014497615"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </aside>
+  </div>
+</body>
+</html>

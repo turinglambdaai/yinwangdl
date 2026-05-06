@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoda 表示法错在哪里 - 王垠博客备份</title>
+  <meta name="description" content="王垠博客文章备份，自动爬取存档">
+  <link rel="canonical" href="/posts/yoda-notation/">
+  <meta name="google-adsense-account" content="ca-pub-3215512126020129">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3215512126020129"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="page-layout">
+    <aside class="ad-sidebar ad-sidebar--left">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3215512126020129"
+        data-ad-slot="7014497615"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </aside>
+    <div class="page-body">
+      <header class="site-header">
+        <div class="container">
+          <div class="site-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 2c1.85 0 3.55.63 4.9 1.69L14.3 8.8a4.97 4.97 0 0 0-4.6 0L7.1 5.69A7.96 7.96 0 0 1 12 4zM4 12c0-1.85.63-3.55 1.69-4.9L8.8 9.7a4.97 4.97 0 0 0 0 4.6l-3.11 2.6A7.96 7.96 0 0 1 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69l2.6-3.11a4.97 4.97 0 0 0 4.6 0l2.6 3.11A7.96 7.96 0 0 1 12 20zm6.31-3.1L15.2 14.3a4.97 4.97 0 0 0 0-4.6l3.11-2.6A7.96 7.96 0 0 1 20 12c0 1.85-.63 3.55-1.69 4.9z"/></svg>
+          </div>
+          <h1 class="site-title">王垠博客备份</h1>
+          <p class="site-desc">自动备份 <a href="https://www.yinwang.org">yinwang.org</a> 博客文章 | <a href="https://github.com/jrtxio/yinwangdl">GitHub</a></p>
+        </div>
+      </header>
+      <main class="container">
+        <article class="post">
+  <a href="/" class="post-back">&larr; 返回列表</a>
+  <header class="post-header">
+    <h1>Yoda 表示法错在哪里</h1>
+    <div class="post-meta">
+      <span>王垠</span>
+      
+      <span class="sep">&middot;</span>
+      <time>2013-04-16</time>
+      
+      
+      <span class="sep">&middot;</span>
+      <a href="https://www.yinwang.org/posts/yoda-notation" target="_blank" rel="noopener">原文</a>
+      
+    </div>
+  </header>
+  <div class="post-content">
+    <p>在上一篇<a href="/posts/terminology/">博文</a>里，我提到了 Yoda 表示法。</p>
+<h3>Yoda Notation（Yoda 表示法）</h3>
+<p><img src="/images/yoda-notation/yoda-notation.jpeg" alt=""></p>
+<p>它的含义是，在 C/C++ 里面使用这样的表达式顺序：</p>
+<pre><code>if (&quot;blue&quot; == theSky) ...
+</code></pre>
+<p>这是为了避免意外的写成：</p>
+<pre><code>if (theSky = &quot;blue&quot;) ...
+</code></pre>
+<p>“Yoda 表示法”的名字来源于《星球大战》的 Yoda 大师。他说话的单词顺序相当奇特，比如：“Backwards it is, yes!”</p>
+<h3>一般认为</h3>
+<blockquote>
+<p>使用这个表示法是为了“变通”（workaround） C/C++ 的一个设计抉择：使用 <code>=</code> 来表示赋值，而使用 <code>==</code> 来表示比较。这个设计充分的展现了“先辈的罪”（Sins of our Forefathers）这一词汇的精髓。</p>
+</blockquote>
+<h3>我认为</h3>
+<blockquote>
+<p>使用 <code>=</code> 来表示赋值其实并不是真正的错误所在。真正的错误在于 C/C++ 的赋值语句不应该返回一个值。</p>
+</blockquote>
+<p>也就是说，<code>theSky = &quot;blue&quot;</code> 的所有功能应该只是“赋值”这种“副作用”，副作用不应该具有“值”。即使你牵强附会说它有一个值，它的“值”也应该是 <code>void</code>（随之这个 <code>void</code> 会被类型检查所拒绝，因为它不是 <code>if</code> 所期望的 <code>bool</code>）。所以，一个良好的语言不应该允许你把 <code>theSky = &quot;blue&quot;</code> 放进 <code>if (...)</code> 的“条件”里面。如果你真的要赋值又要判断，它会迫使你把这拆开成两行：</p>
+<pre><code>theSky = &quot;blue&quot;;
+if (theSky) ...
+</code></pre>
+<p>更近一步。<code>if (theSky)</code> 这个写法其实也是一个先辈的罪。<code>theSky</code> 的类型是 <code>string</code>，它不应该可以直接被作为 <code>bool</code> 使用。<code>if (...)</code> 的条件应该必须是一个 <code>bool</code>。 所以这里其实应该写成：</p>
+<pre><code>theSky = &quot;blue&quot;;
+if (theSky != NULL) ...
+</code></pre>
+<p>因为赋值语句永远不可能出现在条件的位置，所以之前的那种错误，即使我们使用 <code>=</code> 作为赋值操作符，也完全不可能出现。这样我们也就完全没必要用 Yoda 表示法了。</p>
+<p>相反，如果我们只是把 <code>=</code> 换成像 Pascal 的 <code>:=</code> 这样的赋值操作符，而保留其它的“特性”（赋值操作会返回值）的话，我们其实还是会遇到同样的问题：</p>
+<pre><code>if (theSky := &quot;blue&quot;) ...
+</code></pre>
+<p>这里假设你想打 <code>=</code>，却不小心打成了 <code>:=</code>。机会虽然小，但是仍然有可能。而我推荐的解决方案，会让你故意想犯错误都不可能，编译器会拒绝接受你的程序。</p>
+<p>所以你看到了，问题的根源其实不在于赋值操作的名字，而是有更深的原因。</p>
+
+  </div>
+</article>
+
+      </main>
+      <footer class="site-footer">
+        <div class="container">
+          <p>内容版权归原作者所有 | 本站仅作备份存档</p>
+        </div>
+      </footer>
+    </div>
+    <aside class="ad-sidebar ad-sidebar--right">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3215512126020129"
+        data-ad-slot="7014497615"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </aside>
+  </div>
+</body>
+</html>
