@@ -147,32 +147,79 @@ def replace_image_paths(content: str, slug: str) -> str:
 
 def format_content(content: str) -> str:
     """Apply tlai-format style formatting rules to content."""
-    # Remove excessive blank lines (3+ consecutive -> 2)
-    content = re.sub(r"\n{3,}", "\n\n", content)
 
-    # Add space between Chinese and English/numbers
-    # Chinese char followed by English letter/number
-    content = re.sub(r"([一-鿿])([a-zA-Z0-9])", r"\1 \2", content)
-    # English letter/number followed by Chinese char
-    content = re.sub(r"([a-zA-Z0-9])([一-鿿])", r"\1 \2", content)
+    # --- heading-depth: #### or deeper -> bold paragraph start ---
+    content = re.sub(r"^#{4,}\s+(.+)$", r"**\1**", content, flags=re.MULTILINE)
 
-    # Remove blank lines between consecutive list items
+    # --- callout: strip Obsidian callout syntax ---
+    content = re.sub(
+        r"^>\s*\[!\w+\]\s*(\*\*.+\*\*)\s*$",
+        r"> \1",
+        content,
+        flags=re.MULTILINE,
+    )
+    content = re.sub(
+        r"^>\s*\[!\w+\]\s*(.+)$",
+        r"> **\1**",
+        content,
+        flags=re.MULTILINE,
+    )
+
+    # --- code-lang: add `text` to bare opening code fences ---
+    in_code_block = False
+    lines = content.split("\n")
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if re.match(r"^```\w*$", stripped):
+            if not in_code_block and stripped == "```":
+                lines[i] = "```text"
+            in_code_block = not in_code_block
+    content = "\n".join(lines)
+
+    # --- cjk-spacing: Pangu spacing (CJK <-> half-width) ---
+    # Step 1: Remove existing incorrect spaces
+    content = re.sub(r"([一-鿿，。！？；：]) ([a-zA-Z0-9%])", r"\1\2", content)
+    content = re.sub(r"([a-zA-Z0-9%]) ([一-鿿，。！？；：])", r"\1\2", content)
+
+    # Step 2: Insert spaces between CJK and half-width characters
+    content = re.sub(r"([一-鿿，。！？；：])([a-zA-Z0-9@#$%&*_+={}<>/\\|~^])", r"\1 \2", content)
+    content = re.sub(r"([a-zA-Z0-9@#$%&*_+={}<>/\\|~^])([一-鿿，。！？；：])", r"\1 \2", content)
+
+    # Step 3: Fix false positives
+    # 3a. Collapse spaces inside markdown links: CJK ] ( and ] CJK (
+    content = re.sub(r"([一-鿿]) \]", r"\1]", content)
+    content = re.sub(r"\] \(", r"](", content)
+    content = re.sub(r"\] ([一-鿿]) \(", r"]\1(", content)
+
+    # 3b. No space after full-width punctuation before CJK
+    content = re.sub(r"([，。！？；：]) ([一-鿿])", r"\1\2", content)
+
+    # 3c. No space between digit and percent sign
+    content = re.sub(r"(\d) %", r"\1%", content)
+
+    # --- list-spacing: remove blank lines between consecutive list items ---
     lines = content.split("\n")
     result = []
     i = 0
     while i < len(lines):
         result.append(lines[i])
-        # If current line is a list item and next is blank followed by list item
         if (
             i + 2 < len(lines)
             and re.match(r"^\s*[-*+]\s", lines[i])
             and lines[i + 1].strip() == ""
             and re.match(r"^\s*[-*+]\s", lines[i + 2])
         ):
-            i += 2  # Skip the blank line
+            i += 2
         else:
             i += 1
     content = "\n".join(result)
+
+    # --- multi-blank: max 1 blank line between paragraphs ---
+    content = re.sub(r"\n{3,}", "\n\n", content)
+    content = re.sub(r"\n\n\n", "\n\n", content)
+
+    # --- strip trailing whitespace ---
+    content = re.sub(r" +\n", "\n", content)
 
     return content
 
