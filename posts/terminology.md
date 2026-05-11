@@ -13,13 +13,13 @@ source: https://www.yinwang.org/posts/terminology
 
   在 C/C++ 里面使用这样的表达式顺序：
 
-```
+```text
   if ("blue" == theSky) ...
 ```
 
   这是为了避免意外的写成：
 
-```
+```text
   if (theSky = "blue") ...
 ```
 
@@ -43,7 +43,7 @@ source: https://www.yinwang.org/posts/terminology
 
   在软件里面也有很多这样的“珍珠”。由于早期的挠人的设计错误，用户不得不采用一些“变通方案”（workaround）或者“附加过程”，这些就像珍珠质一样。久而久之，这些变通方案凝结起来，变成了“软件珍珠”，不了解它们来源的人都视之为宝贝。虽然产生于同样的原理，“软件珍珠”远远没有真正的珍珠那么好看。
 
-  （请比较：Sins of our Forefathers）
+  （请比较： Sins of our Forefathers）
 
 * Sins of our Forefathers（先辈的罪）
 
@@ -61,7 +61,7 @@ source: https://www.yinwang.org/posts/terminology
 
 * Workaround（变通）
 
-```
+```text
 ![](/images/terminology/workaround.png)
 ```
 
@@ -79,10 +79,10 @@ source: https://www.yinwang.org/posts/terminology
 
   <img src="/images/terminology/higgs-boson.jpg">
 
-  一种假想中的 bug。它一般是跟据运行日志的少数记录和零星含糊的用户报告推测出来，但是在开发员的机器上很难重现。
+  一种假想中的 bug 。它一般是跟据运行日志的少数记录和零星含糊的用户报告推测出来，但是在开发员的机器上很难重现。
 
 * <a href="http://en.wikipedia.org/wiki/Heisenberg_uncertainty_principle">Heisenbug</a>
 
   <img src="/images/terminology/heisenbug.png">
 
-  当你试图观察它的时候就突然消失或者改变行为特征的 bug。
+  当你试图观察它的时候就突然消失或者改变行为特征的 bug 。

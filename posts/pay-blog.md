@@ -11,4 +11,4 @@ source: https://www.yinwang.org/posts/pay-blog
 
    <img src="/images/pay-blog/alipay-32.jpg" width="200">
 
-3. PayPal：请点击[[付款链接](http://paypal.me/yinwang0/5)]
+3. PayPal ：请点击[[付款链接](http://paypal.me/yinwang0/5)]

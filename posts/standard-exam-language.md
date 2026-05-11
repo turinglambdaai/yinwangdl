@@ -11,7 +11,7 @@ source: https://www.yinwang.org/posts/standard-exam-language
 
 比如，选择题的格式是这样：
 
-```
+```text
 # Our teacher told us that there ______ no end to learning.
    A. was    B. is *        C. has            D. had
 ```
@@ -20,25 +20,25 @@ source: https://www.yinwang.org/posts/standard-exam-language
 
 最有意思的是改错题。因为改错题是一个英语段落，某些行有错，但每行最多只能有一个错。所以我的设计是，在普通的段落里插入这样的记号：
 
-```
+```text
 This is an |extraordinary|extrordinary| sentence...
 ```
 
 用以“引入错误”。左边是正确的方式，右边是错误的。这里使用 `|` 是因为这个符号不会在普通的英语文章里出现。`|` 的左右两边都可以是空白，用以表示“插入”与“删除”。比如：
 
-```
+```text
 I don't know how to play |the|| piano.
 ```
 
 这样的题目显示出来之后是这样：
 
-```
+```text
 I don't know how to play piano.
 ```
 
 然后答案里会显示：
 
-```
+```text
 在 play 和 piano 之间加 the
 ```
 
