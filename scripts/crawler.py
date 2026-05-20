@@ -224,13 +224,23 @@ def format_content(content: str) -> str:
     return content
 
 
+def build_source_index():
+    """Build mapping of source URL -> filepath from existing posts."""
+    source_map = {}
+    if not POSTS_DIR.exists():
+        return source_map
+    for f in POSTS_DIR.glob("*.md"):
+        text = f.read_text(encoding="utf-8")
+        m = re.search(r"^source:\s*(.+)$", text, re.MULTILINE)
+        if m:
+            source_map[m.group(1).strip()] = f
+    return source_map
+
+
 def generate_frontmatter(post: dict) -> str:
     """Generate YAML frontmatter for a post."""
-    title = post.get("title", "").replace('"', '\\"')
     return (
         "---\n"
-        "dg-publish: false\n"
-        f"title: \"{title}\"\n"
         f"author: 王垠\n"
         f"created: {post.get('publish_date', '')}\n"
         f"source: {BASE_URL}/posts/{post['slug']}\n"
@@ -238,17 +248,25 @@ def generate_frontmatter(post: dict) -> str:
     )
 
 
+def sanitize_filename(name: str) -> str:
+    """Remove characters invalid in filenames."""
+    for ch in ['\\', '/', ':', '*', '?', '"', '<', '>', '|']:
+        name = name.replace(ch, '')
+    return name.strip() or "untitled"
+
+
 def save_post(post: dict, content: str) -> None:
-    """Save a post as a markdown file."""
+    """Save a post as a markdown file with Chinese title as filename."""
     slug = post["slug"]
+    title = sanitize_filename(post.get("title", slug))
     frontmatter = generate_frontmatter(post)
     formatted = format_content(content)
     content_with_images = replace_image_paths(formatted, slug)
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
-    filepath = POSTS_DIR / f"{slug}.md"
+    filepath = POSTS_DIR / f"{title}.md"
     filepath.write_text(frontmatter + content_with_images, encoding="utf-8")
-    print(f"  Saved: {slug}.md")
+    print(f"  Saved: {title}.md")
 
 
 def download_post_images(slug: str, content: str) -> list[str]:
@@ -294,6 +312,7 @@ def crawl(force: bool = False):
     print("Fetching post list from API...")
     all_posts = fetch_all_slugs()
     index = load_index()
+    source_index = build_source_index()
 
     new_count = 0
     updated_count = 0
@@ -302,14 +321,15 @@ def crawl(force: bool = False):
 
     for i, post_meta in enumerate(all_posts):
         slug = post_meta["slug"]
-        existing = index["posts"].get(slug)
+        source_url = f"{BASE_URL}/posts/{slug}"
         updated_at = post_meta.get("updated_at", "")
 
-        # Skip if file already exists on disk (vault posts take priority)
-        post_file = POSTS_DIR / f"{slug}.md"
-        if not force and post_file.exists() and existing and existing.get("updated_at") == updated_at:
-            skip_count += 1
-            continue
+        # Skip if file with same source URL already exists (dedup by source)
+        if not force and source_url in source_index:
+            existing = index["posts"].get(slug)
+            if existing and existing.get("updated_at") == updated_at:
+                skip_count += 1
+                continue
 
         print(f"[{i + 1}/{len(all_posts)}] Processing: {slug}")
 

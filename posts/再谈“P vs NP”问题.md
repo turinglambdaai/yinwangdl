@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2019-07-21
 source: https://www.yinwang.org/posts/pnp2

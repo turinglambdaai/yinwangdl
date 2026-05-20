@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2016-10-12
 source: https://www.yinwang.org/posts/compiler-bug

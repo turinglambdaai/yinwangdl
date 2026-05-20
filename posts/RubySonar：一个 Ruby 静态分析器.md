@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2014-01-28
 source: https://www.yinwang.org/posts/rubysonar

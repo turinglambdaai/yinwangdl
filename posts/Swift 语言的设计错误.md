@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2016-06-06
 source: https://www.yinwang.org/posts/swift

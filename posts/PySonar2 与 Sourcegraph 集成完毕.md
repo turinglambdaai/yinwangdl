@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2013-11-25
 source: https://www.yinwang.org/posts/pysonar2-sg

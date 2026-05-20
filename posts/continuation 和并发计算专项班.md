@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2022-12-12
 source: https://www.yinwang.org/posts/continuation-course

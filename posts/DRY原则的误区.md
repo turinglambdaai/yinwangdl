@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2015-06-14
 source: https://www.yinwang.org/posts/dry-principle

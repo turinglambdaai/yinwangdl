@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2019-09-11
 source: https://www.yinwang.org/posts/talk-is-not-cheap

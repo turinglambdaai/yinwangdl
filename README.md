@@ -5,12 +5,19 @@
 ## 仓库结构
 
 ```
-posts/           # Markdown 文章（文件名 = slug 或中文标题）
-images/          # 文章中引用的图片
-scripts/         # 爬虫脚本
+posts/           # Markdown 文章（文件名 = 中文标题）
+images/          # 文章中引用的图片（按 slug 分目录）
+scripts/         # 爬虫和去重脚本
 index.json       # 文章元数据索引
 .github/         # GitHub Actions 自动爬取
 ```
+
+## 文章格式
+
+- 文件名使用中文标题（Obsidian 兼容，文件名即标题）
+- Frontmatter 仅含 `author`、`created`、`source` 三个字段
+- 正文从 `##` 开始（文件名已是一级标题）
+- 所有文章可直接放入 Obsidian vault 无需修改
 
 ## 文章来源
 
@@ -32,5 +39,6 @@ python scripts/crawler.py --force    # 强制重新下载所有文章
 ## 技术细节
 
 - 数据源：`https://www.yinwang.org/api/v1/posts`（分页：`skip`/`limit`）
-- 文章格式：Markdown，兼容 Obsidian frontmatter
-- 图片：下载到本地 `images/` 目录，替换为相对路径引用
+- 文件命名：中文标题（API `title` 字段），不再使用 URL slug
+- 去重：按 `source` URL 检查，避免重复文章
+- 图片：下载到 `images/{slug}/` 目录，使用标准 Markdown 引用

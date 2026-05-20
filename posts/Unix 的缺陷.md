@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2012-04-11
 source: http://blog.sina.com.cn/s/blog_5d90e82f01014k5j.html

@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2013-04-11
 source: https://www.yinwang.org/posts/scheme-setup

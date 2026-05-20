@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2015-03-18
 source: http://www.yinwang.org/blog-cn/2015/03/18/yin-lang-secret

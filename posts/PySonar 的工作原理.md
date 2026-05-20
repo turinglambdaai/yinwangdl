@@ -1,5 +1,4 @@
 ---
-dg-publish: false
 author: 王垠
 created: 2013-06-21
 source: http://www.yinwang.org/blog-cn/2013/06/21/pysonar-slides
