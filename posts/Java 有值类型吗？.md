@@ -1,4 +1,5 @@
 ---
+slug: java-value-type
 author: 王垠
 created: 2016-06-08
 source: https://www.yinwang.org/posts/java-value-type

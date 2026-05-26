@@ -1,4 +1,5 @@
 ---
+slug: rust
 author: 王垠
 created: 2016-09-18
 source: https://www.yinwang.org/posts/rust

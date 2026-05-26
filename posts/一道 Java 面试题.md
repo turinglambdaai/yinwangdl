@@ -1,4 +1,5 @@
 ---
+slug: java-type-system
 author: 王垠
 created: 2020-02-13
 source: https://www.yinwang.org/posts/java-type-system

@@ -1,4 +1,5 @@
 ---
+slug: pysonar2
 author: 王垠
 created: 2013-10-29
 source: http://www.yinwang.org/blog-cn/2013/10/29/pysonar2

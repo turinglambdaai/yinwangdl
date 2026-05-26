@@ -1,4 +1,5 @@
 ---
+slug: currying
 author: 王垠
 created: 2013-04-02
 source: https://www.yinwang.org/posts/currying

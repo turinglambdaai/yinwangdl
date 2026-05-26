@@ -1,4 +1,5 @@
 ---
+slug: alpha-go
 author: 王垠
 created: 2016-03-09
 source: https://www.yinwang.org/posts/alpha-go

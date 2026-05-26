@@ -1,4 +1,5 @@
 ---
+slug: dsl
 author: 王垠
 created: 2017-05-25
 source: https://www.yinwang.org/posts/dsl

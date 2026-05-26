@@ -1,4 +1,5 @@
 ---
+slug: pydiff
 author: 王垠
 created: 2013-07-06
 source: https://www.yinwang.org/blog-cn/2013/07/06/pydiff

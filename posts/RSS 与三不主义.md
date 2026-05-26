@@ -1,4 +1,5 @@
 ---
+slug: rss
 author: 王垠
 created: 2014-09-17
 source: https://www.yinwang.org/blog-cn/2014/09/17/rss

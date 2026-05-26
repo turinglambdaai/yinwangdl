@@ -1,4 +1,5 @@
 ---
+slug: dijkstra-interview
 author: 王垠
 created: 2014-02-18
 source: https://www.yinwang.org/posts/dijkstra-interview

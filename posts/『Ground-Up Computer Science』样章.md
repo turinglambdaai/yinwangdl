@@ -1,4 +1,5 @@
 ---
+slug: gucs-sample
 author: 王垠
 created: 2021-05-11
 source: https://www.yinwang.org/posts/gucs-sample

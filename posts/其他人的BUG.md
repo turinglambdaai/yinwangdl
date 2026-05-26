@@ -1,4 +1,5 @@
 ---
+slug: other-peoples-bug
 author: 王垠
 created: 2015-02-20
 source: https://www.yinwang.org/posts/other-peoples-bug

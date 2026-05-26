@@ -1,4 +1,5 @@
 ---
+slug: google
 author: 王垠
 created: 2013-04-13
 source: http://www.yinwang.org/blog-cn/2013/04/13/google

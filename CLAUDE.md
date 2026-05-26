@@ -7,6 +7,7 @@
 - **文件名 = 文章中文标题**（如 `计算机科学视频班课程介绍.md`）
 - **禁止使用英文 slug** 作为文件名（如 `cs-video-course.md`）
 - 理由：Obsidian 以文件名作为标题，英文 slug 在 Obsidian 中无意义
+- 英文 slug 存放在 frontmatter 的 `slug` 字段中，11ty 用它生成 URL（`/posts/{slug}/`）
 - 11ty 已有 fallback 逻辑（`posts.11tydata.js`）从文件名提取 title，切换中文文件名不会破坏网站
 
 ## 去重
@@ -21,6 +22,7 @@
 
 ```yaml
 ---
+slug: cs-video-course
 author: 王垠
 created: 2025-05-12
 source: https://www.yinwang.org/posts/cs-video-course
@@ -29,7 +31,9 @@ source: https://www.yinwang.org/posts/cs-video-course
 
 - **不需要 `title` 字段**（文件名即标题）
 - **不需要 `dg-publish` 字段**（11ty 不使用此字段）
-- 必需字段：`author`、`created`、`source`
+- 必需字段：`slug`、`author`、`created`、`source`
+- `slug` 用于生成 URL（`/posts/{slug}/`），值来自源站 URL 的最后一段
+- 字段顺序与 Base-Note 模板一致（`slug` → `author` → `created` → `source`）
 - frontmatter 结束的 `---` 后直接接正文，不插入空行
 
 ## 标题层级
@@ -60,5 +64,5 @@ source: https://www.yinwang.org/posts/cs-video-course
 
 1. 文件名使用 API 返回的中文 `title` 而非 `slug`
 2. 保存前检查同 source URL 的文件是否已存在
-3. frontmatter 只包含 `author`、`created`、`source`
+3. frontmatter 包含 `slug`、`author`、`created`、`source`（按此顺序）
 4. 图片目录仍用 slug 命名（`images/{slug}/`）

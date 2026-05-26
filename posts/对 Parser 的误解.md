@@ -1,4 +1,5 @@
 ---
+slug: parser
 author: 王垠
 created: 2015-09-19
 source: https://www.yinwang.org/posts/parser

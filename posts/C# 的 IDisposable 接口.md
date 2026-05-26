@@ -1,4 +1,5 @@
 ---
+slug: c-sharp-disposable
 author: 王垠
 created: 2016-10-13
 source: https://www.yinwang.org/posts/c-sharp-disposable

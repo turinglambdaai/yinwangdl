@@ -1,4 +1,5 @@
 ---
+slug: sql-nosql
 author: 王垠
 created: 2014-04-24
 source: https://www.yinwang.org/blog-cn/2014/04/24/sql-nosql/

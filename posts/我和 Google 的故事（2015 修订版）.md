@@ -1,4 +1,5 @@
 ---
+slug: google-story-2015
 author: 王垠
 created: 2014-12-31
 source: http://www.yinwang.org/blog-cn/2014/12/31/google-story

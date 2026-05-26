@@ -1,4 +1,5 @@
 ---
+slug: gtf
 author: 王垠
 created: 2012-05-18
 source: https://www.yinwang.org/blog-cn/2012/05/18/gtf

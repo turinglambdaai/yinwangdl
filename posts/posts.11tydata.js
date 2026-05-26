@@ -12,5 +12,9 @@ module.exports = {
       }
       return data.page.fileSlug || "";
     },
+    permalink: (data) => {
+      if (data.slug) return `/posts/${data.slug}/index.html`;
+      return false;
+    },
   },
 };

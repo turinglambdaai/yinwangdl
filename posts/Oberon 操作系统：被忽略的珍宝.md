@@ -1,4 +1,5 @@
 ---
+slug: oberon
 author: 王垠
 created: 2013-03-07
 source: https://www.yinwang.org/posts/oberon

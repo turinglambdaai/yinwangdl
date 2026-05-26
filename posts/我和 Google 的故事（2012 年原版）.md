@@ -1,4 +1,5 @@
 ---
+slug: google-story
 author: 王垠
 created: 2012-07-12
 source: https://www.yinwang.org/posts/google-story

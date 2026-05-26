@@ -1,4 +1,5 @@
 ---
+slug: tesla-model-x
 author: 王垠
 created: 2015-12-21
 source: https://www.yinwang.org/posts/tesla-model-x

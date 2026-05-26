@@ -1,4 +1,5 @@
 ---
+slug: tesla-autopilot-fatal-crash
 author: 王垠
 created: 2016-07-10
 source: https://www.yinwang.org/posts/tesla-autopilot-fatal-crash

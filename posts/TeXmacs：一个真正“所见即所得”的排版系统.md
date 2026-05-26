@@ -1,4 +1,5 @@
 ---
+slug: texmacs
 author: 王垠
 created: 2012-09-18
 source: https://www.yinwang.org/blog-cn/2012/09/18/texmacs

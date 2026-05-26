@@ -1,4 +1,5 @@
 ---
+slug: yoda-notation
 author: 王垠
 created: 2013-04-16
 source: https://www.yinwang.org/posts/yoda-notation

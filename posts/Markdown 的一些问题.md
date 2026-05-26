@@ -1,4 +1,5 @@
 ---
+slug: markdown
 author: 王垠
 created: 2013-04-14
 source: https://www.yinwang.org/posts/markdown

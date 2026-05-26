@@ -241,6 +241,7 @@ def generate_frontmatter(post: dict) -> str:
     """Generate YAML frontmatter for a post."""
     return (
         "---\n"
+        f"slug: {post['slug']}\n"
         f"author: 王垠\n"
         f"created: {post.get('publish_date', '')}\n"
         f"source: {BASE_URL}/posts/{post['slug']}\n"

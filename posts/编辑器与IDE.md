@@ -1,4 +1,5 @@
 ---
+slug: editor-ide
 author: 王垠
 created: 2013-04-20
 source: https://www.yinwang.org/posts/editor-ide

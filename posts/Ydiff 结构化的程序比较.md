@@ -1,4 +1,5 @@
 ---
+slug: ydiff
 author: 王垠
 created: 2013-04-21
 source: https://www.yinwang.org/blog-cn/2013/04/21/ydiff
