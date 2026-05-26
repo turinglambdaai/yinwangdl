@@ -1,44 +1,81 @@
 # yinwangdl
 
-王垠博客（[yinwang.org](https://www.yinwang.org)）文章备份。自动每周爬取，通过 Git 历史保留已删除文章。
+[English](README.md) | [中文](README.zh-CN.md)
 
-## 仓库结构
+Auto-crawled archive of [yinwang.org](https://www.yinwang.org) blog posts by Wang Yin. The crawler runs weekly via GitHub Actions, saving every post as Markdown with images. Deleted articles are preserved through Git history.
+
+## Features
+
+- **Automated weekly crawl** via GitHub Actions (every Monday at 03:00 UTC)
+- **Incremental updates** — only downloads new or modified posts
+- **Full content archival** — posts saved as Markdown, images downloaded locally
+- **Obsidian compatible** — file names are Chinese titles, frontmatter follows Obsidian conventions
+- **Deduplication** — prevents duplicate files by tracking source URLs
+- **Static site generation** — builds a searchable website with Eleventy and deploys to Vercel/GitHub Pages
+
+## Repository Structure
 
 ```
-posts/           # Markdown 文章（文件名 = 中文标题）
-images/          # 文章中引用的图片（按 slug 分目录）
-scripts/         # 爬虫和去重脚本
-index.json       # 文章元数据索引
-.github/         # GitHub Actions 自动爬取
+posts/           # Markdown articles (file name = Chinese title)
+images/          # Post images (organized by URL slug)
+scripts/         # Crawler and utility scripts
+src/site/        # Eleventy static site source
+index.json       # Post metadata index
 ```
 
-## 文章格式
+## Requirements
 
-- 文件名使用中文标题（Obsidian 兼容，文件名即标题）
-- Frontmatter 仅含 `author`、`created`、`source` 三个字段
-- 正文从 `##` 开始（文件名已是一级标题）
-- 所有文章可直接放入 Obsidian vault 无需修改
+- Python 3.12+
+- [requests](https://pypi.org/project/requests/) (`pip install requests`)
 
-## 文章来源
+## Usage
 
-- **用户格式化版本**：来自 Obsidian 笔记库的已排版文章（优先保留）
-- **API 自动下载**：从博客 API 获取的最新文章，按 tlai-format 规范排版
-
-## 自动爬取
-
-GitHub Actions 每周一 03:00 UTC 自动执行，检查新文章和更新。也支持手动触发。
-
-## 手动运行
+### Run the crawler manually
 
 ```bash
+# Install dependencies
 pip install -r scripts/requirements.txt
-python scripts/crawler.py            # 增量更新
-python scripts/crawler.py --force    # 强制重新下载所有文章
+
+# Incremental crawl (only new/updated posts)
+python scripts/crawler.py
+
+# Force re-download all posts
+python scripts/crawler.py --force
 ```
 
-## 技术细节
+### Build the static site
 
-- 数据源：`https://www.yinwang.org/api/v1/posts`（分页：`skip`/`limit`）
-- 文件命名：中文标题（API `title` 字段），不再使用 URL slug
-- 去重：按 `source` URL 检查，避免重复文章
-- 图片：下载到 `images/{slug}/` 目录，使用标准 Markdown 引用
+```bash
+npm install
+npm run build    # Output goes to dist/
+npm run dev      # Local dev server with live reload
+```
+
+## How It Works
+
+1. **Fetch post list** — The crawler calls `https://www.yinwang.org/api/v1/posts` with pagination (`skip`/`limit`) to get all post slugs.
+2. **Deduplicate** — It builds an index of existing posts by `source` URL to avoid duplicates.
+3. **Download each post** — For each slug, it fetches the full post content from `https://www.yinwang.org/api/v1/posts/{slug}`.
+4. **Download images** — All images referenced in the post are downloaded to `images/{slug}/`.
+5. **Format and save** — The content is reformatted (CJK spacing, heading normalization, code block language hints) and saved as a Markdown file with YAML frontmatter.
+6. **Update index** — `index.json` is updated with metadata for each processed post.
+
+### Post format
+
+Each Markdown file includes YAML frontmatter:
+
+```yaml
+---
+slug: my-blog-post
+author: 王垠
+created: 2025-01-15
+source: https://www.yinwang.org/posts/my-blog-post
+---
+```
+
+- File name uses the Chinese title from the API (Obsidian-friendly).
+- Body text starts at `##` level (the file name acts as the `#` heading).
+
+## License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
