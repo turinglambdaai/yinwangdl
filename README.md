@@ -1,8 +1,10 @@
-# yinwangdl
-
-[English](README.md) | [中文](README.zh-CN.md)
+# Yinwang Blog Archive
 
 Auto-crawled archive of [yinwang.org](https://www.yinwang.org) blog posts by Wang Yin. The crawler runs weekly via GitHub Actions, saving every post as Markdown with images. Deleted articles are preserved through Git history.
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+
+**English** · [中文](README.zh-CN.md)
 
 ## Features
 
@@ -78,4 +80,4 @@ source: https://www.yinwang.org/posts/my-blog-post
 
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE).
+Licensed under the [Apache License 2.0](LICENSE).

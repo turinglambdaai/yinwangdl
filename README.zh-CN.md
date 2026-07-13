@@ -1,8 +1,10 @@
-# yinwangdl
-
-[English](README.md) | [中文](README.zh-CN.md)
+# Yinwang Blog Archive
 
 王垠博客（[yinwang.org](https://www.yinwang.org)）文章自动备份。通过 GitHub Actions 每周自动爬取，将所有博文保存为 Markdown 文件并下载图片。已删除的文章通过 Git 历史保留。
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+
+[English](README.md) · **中文**
 
 ## 功能特点
 
@@ -78,4 +80,4 @@ source: https://www.yinwang.org/posts/my-blog-post
 
 ## 许可证
 
-本项目基于 [Apache License 2.0](LICENSE) 许可。
+基于 [Apache License 2.0](LICENSE) 开源。
