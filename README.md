@@ -15,14 +15,15 @@ Auto-crawled archive of [yinwang.org](https://www.yinwang.org) blog posts by Wan
 - **Deduplication** — prevents duplicate files by tracking source URLs
 - **Static site generation** — builds a searchable website with Eleventy and deploys to Vercel/GitHub Pages
 
-## Repository Structure
+## Project Structure
 
 ```
-posts/           # Markdown articles (file name = Chinese title)
-images/          # Post images (organized by URL slug)
-scripts/         # Crawler and utility scripts
-src/site/        # Eleventy static site source
-index.json       # Post metadata index
+yinwangdl/
+├── posts/           # Markdown articles (file name = Chinese title)
+├── images/          # Post images (organized by URL slug)
+├── scripts/         # Crawler and utility scripts
+├── src/site/        # Eleventy static site source
+└── index.json       # Post metadata index
 ```
 
 ## Requirements
@@ -30,9 +31,16 @@ index.json       # Post metadata index
 - Python 3.12+
 - [requests](https://pypi.org/project/requests/) (`pip install requests`)
 
-## Usage
+## Quick Start
 
-### Run the crawler manually
+### 1. Clone
+
+```bash
+git clone https://github.com/turinglambdaai/yinwangdl.git
+cd yinwangdl
+```
+
+### 2. Run the crawler manually
 
 ```bash
 # Install dependencies
@@ -45,7 +53,7 @@ python scripts/crawler.py
 python scripts/crawler.py --force
 ```
 
-### Build the static site
+### 3. Build the static site
 
 ```bash
 npm install

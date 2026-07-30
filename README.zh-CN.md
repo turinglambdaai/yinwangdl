@@ -6,7 +6,7 @@
 
 [English](README.md) · **中文**
 
-## 功能特点
+## 功能特性
 
 - **每周自动爬取** — 通过 GitHub Actions 执行（每周一 UTC 03:00）
 - **增量更新** — 仅下载新增或修改的文章
@@ -15,14 +15,15 @@
 - **自动去重** — 通过 source URL 跟踪，避免重复文件
 - **静态站点生成** — 使用 Eleventy 构建可搜索的网站，部署到 Vercel/GitHub Pages
 
-## 仓库结构
+## 项目结构
 
 ```
-posts/           # Markdown 文章（文件名 = 中文标题）
-images/          # 文章图片（按 URL slug 分目录）
-scripts/         # 爬虫和工具脚本
-src/site/        # Eleventy 静态站点源码
-index.json       # 文章元数据索引
+yinwangdl/
+├── posts/           # Markdown 文章（文件名 = 中文标题）
+├── images/          # 文章图片（按 URL slug 分目录）
+├── scripts/         # 爬虫和工具脚本
+├── src/site/        # Eleventy 静态站点源码
+└── index.json       # 文章元数据索引
 ```
 
 ## 环境要求
@@ -30,9 +31,16 @@ index.json       # 文章元数据索引
 - Python 3.12+
 - [requests](https://pypi.org/project/requests/)（`pip install requests`）
 
-## 使用方法
+## 快速开始
 
-### 手动运行爬虫
+### 1. 克隆仓库
+
+```bash
+git clone https://github.com/turinglambdaai/yinwangdl.git
+cd yinwangdl
+```
+
+### 2. 手动运行爬虫
 
 ```bash
 # 安装依赖
@@ -45,7 +53,7 @@ python scripts/crawler.py
 python scripts/crawler.py --force
 ```
 
-### 构建静态站点
+### 3. 构建静态站点
 
 ```bash
 npm install
