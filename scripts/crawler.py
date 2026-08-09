@@ -166,14 +166,25 @@ def format_content(content: str) -> str:
     )
 
     # --- code-lang: add `text` to bare opening code fences ---
+    # Matches fenced code blocks: up to 3 leading whitespace chars, 3+ ticks,
+    # then an info string of any non-backtick chars (so ```c#, ```c++ work).
+    # ```code``` (inline) won't match because info ends before a closing run.
+    FENCE_RE = re.compile(r"^(\s{0,3})(`{3,})([^`]*)$")
     in_code_block = False
     lines = content.split("\n")
     for i, line in enumerate(lines):
-        stripped = line.strip()
-        if re.match(r"^```\w*$", stripped):
-            if not in_code_block and stripped == "```":
-                lines[i] = "```text"
-            in_code_block = not in_code_block
+        m = FENCE_RE.match(line)
+        if not m:
+            continue
+        fence, info = m.group(2), m.group(3).strip()
+        if not in_code_block:
+            # Opening fence: add `text` if language is missing
+            if not info:
+                lines[i] = f"{fence}text"
+            in_code_block = True
+        else:
+            # Closing fence: leave as-is (CommonMark forbids info on close)
+            in_code_block = False
     content = "\n".join(lines)
 
     # --- cjk-spacing: Pangu spacing (CJK <-> half-width) ---
