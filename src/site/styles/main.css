@@ -713,3 +713,7 @@ a:hover { color: var(--accent-hover); }
     padding: 14px 16px;
   }
 }
+
+.footer-wechat { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 14px; }
+.footer-wechat img { width: 64px; height: 64px; border-radius: 8px; border: 1px solid var(--border, #e7e5e4); display: block; }
+.footer-wechat span { font-size: 0.78em; color: var(--text-3, #a8a29e); }
