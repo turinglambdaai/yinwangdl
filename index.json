@@ -4,9 +4,10 @@
       "title": "计算机科学视频班课程介绍",
       "slug": "cs-video-course",
       "publish_date": "2025-05-12",
-      "updated_at": "2026-07-13T05:34:27.953889Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -14,9 +15,10 @@
       "title": "计算机科学基础班第 5 期成功结束",
       "slug": "cs5-completed",
       "publish_date": "2024-05-03",
-      "updated_at": "2026-07-13T05:34:11.516049Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -24,9 +26,10 @@
       "title": "计算机科学基础班（第5期，现实接轨班）招生",
       "slug": "cs-course-5",
       "publish_date": "2023-12-23",
-      "updated_at": "2026-07-13T05:47:44.494170Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -46,9 +49,10 @@
       "title": "continuation 和并发计算专项班",
       "slug": "continuation-course",
       "publish_date": "2022-12-12",
-      "updated_at": "2026-07-13T05:46:09.857286Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -56,10 +60,11 @@
       "title": "计算机科学阅读班提供疫情特价",
       "slug": "tuition-for-covid",
       "publish_date": "2022-12-01",
-      "updated_at": "2026-07-13T05:45:59.271522Z",
+      "updated_at": null,
       "tags": [
         "computer-science",
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -67,9 +72,10 @@
       "title": "计算机科学进阶班招生",
       "slug": "advanced-cs-course",
       "publish_date": "2022-02-22",
-      "updated_at": "2026-07-12T22:46:16.743084Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -77,7 +83,7 @@
       "title": "自然视力恢复法",
       "slug": "myopia",
       "publish_date": "2022-02-22",
-      "updated_at": "2026-07-13T05:39:51.088638Z",
+      "updated_at": null,
       "tags": [
         "health"
       ],
@@ -87,9 +93,10 @@
       "title": "计算机科学阅读班招生说明",
       "slug": "reading-course",
       "publish_date": "2022-02-07",
-      "updated_at": "2026-07-12T22:46:17.192061Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -97,10 +104,11 @@
       "title": "第一位“计算机科学少年班”学生毕业",
       "slug": "youth-cs-student",
       "publish_date": "2021-09-16",
-      "updated_at": "2026-07-12T22:46:17.200565Z",
+      "updated_at": null,
       "tags": [
         "computer-science",
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -108,7 +116,7 @@
       "title": "“超人类机器视觉”是不存在的",
       "slug": "super-human-level-vision",
       "publish_date": "2021-07-29",
-      "updated_at": "2026-07-12T22:46:17.667610Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -118,10 +126,11 @@
       "title": "『Ground-Up Computer Science』样章",
       "slug": "gucs-sample",
       "publish_date": "2021-05-11",
-      "updated_at": "2026-07-13T06:00:24.288210Z",
+      "updated_at": null,
       "tags": [
         "computer-science",
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": true
     },
@@ -129,9 +138,10 @@
       "title": "计算机科学基础班（第 4 期）报名",
       "slug": "cs4",
       "publish_date": "2021-05-10",
-      "updated_at": "2026-07-12T22:46:18.124524Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -139,7 +149,7 @@
       "title": "大提琴为什么这么难学",
       "slug": "cello-technique",
       "publish_date": "2021-04-16",
-      "updated_at": "2026-07-13T02:14:26.961826Z",
+      "updated_at": null,
       "tags": [
         "lifestyle",
         "education"
@@ -150,9 +160,10 @@
       "title": "计算机科学阅读班（实验）",
       "slug": "cs-reading-course",
       "publish_date": "2021-02-16",
-      "updated_at": "2026-07-12T22:46:19.017201Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -160,9 +171,10 @@
       "title": "计算机科学基础班（第三期）报名",
       "slug": "cs3",
       "publish_date": "2021-02-15",
-      "updated_at": "2026-07-12T22:46:19.469236Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -170,9 +182,10 @@
       "title": "计算机科学集体班（第二期）报名",
       "slug": "cs-class2",
       "publish_date": "2020-09-24",
-      "updated_at": "2026-07-12T22:46:19.922834Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -180,7 +193,7 @@
       "title": "几个需要避免的美国英语习惯",
       "slug": "american-english-problems",
       "publish_date": "2020-05-23",
-      "updated_at": "2026-07-12T22:46:20.370846Z",
+      "updated_at": null,
       "tags": [
         "english"
       ],
@@ -190,7 +203,7 @@
       "title": "一对一教学计划",
       "slug": "individualized-learning",
       "publish_date": "2020-04-30",
-      "updated_at": "2026-07-12T22:46:20.821342Z",
+      "updated_at": null,
       "tags": [
         "education"
       ],
@@ -200,9 +213,10 @@
       "title": "计算机科学入门班报名",
       "slug": "entry-level-class",
       "publish_date": "2020-03-26",
-      "updated_at": "2026-07-12T22:46:21.278603Z",
+      "updated_at": null,
       "tags": [
-        "education"
+        "education",
+        "cs-course"
       ],
       "has_images": false
     },
@@ -210,7 +224,7 @@
       "title": "对智商的怀疑",
       "slug": "wisdom-of-intelligence",
       "publish_date": "2020-03-23",
-      "updated_at": "2026-07-13T03:44:23.079950Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -220,7 +234,7 @@
       "title": "英语学习的一些经验",
       "slug": "english-learning-tips",
       "publish_date": "2020-03-06",
-      "updated_at": "2026-07-13T03:04:39.707476Z",
+      "updated_at": null,
       "tags": [
         "english"
       ],
@@ -230,7 +244,7 @@
       "title": "计算机科学课程",
       "slug": "cs-course",
       "publish_date": "2020-03-03",
-      "updated_at": "2026-07-12T22:46:23.075490Z",
+      "updated_at": null,
       "tags": [
         "education"
       ],
@@ -240,7 +254,7 @@
       "title": "一道 Java 面试题",
       "slug": "java-type-system",
       "publish_date": "2020-02-13",
-      "updated_at": "2026-07-13T03:27:36.772663Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "type-system"
@@ -251,7 +265,7 @@
       "title": "如何阅读别人的代码",
       "slug": "how-to-read-code",
       "publish_date": "2020-02-05",
-      "updated_at": "2026-07-12T22:46:23.972574Z",
+      "updated_at": null,
       "tags": [
         "software-engineering",
         "education"
@@ -262,7 +276,7 @@
       "title": "我不是编译器专家",
       "slug": "compilers",
       "publish_date": "2019-12-24",
-      "updated_at": "2026-07-12T22:46:23.978746Z",
+      "updated_at": null,
       "tags": [
         "compiler"
       ],
@@ -272,7 +286,7 @@
       "title": "自动驾驶车的责任和风险分析",
       "slug": "autopilot-responsibility",
       "publish_date": "2019-09-30",
-      "updated_at": "2026-07-13T05:46:59.480648Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -282,7 +296,7 @@
       "title": "机器与人类视觉能力的差距（3）",
       "slug": "machine-vs-human-3",
       "publish_date": "2019-09-16",
-      "updated_at": "2026-07-12T22:46:24.428004Z",
+      "updated_at": null,
       "tags": [
         "ai",
         "philosophy"
@@ -293,7 +307,7 @@
       "title": "机器与人类视觉能力的差距（2）",
       "slug": "machine-vs-human-2",
       "publish_date": "2019-09-15",
-      "updated_at": "2026-07-12T22:46:27.144543Z",
+      "updated_at": null,
       "tags": [
         "ai",
         "philosophy"
@@ -304,7 +318,7 @@
       "title": "机器与人类视觉能力的差距（1）",
       "slug": "machine-vs-human",
       "publish_date": "2019-09-14",
-      "updated_at": "2026-07-12T22:46:29.854438Z",
+      "updated_at": null,
       "tags": [
         "ai",
         "philosophy"
@@ -315,7 +329,7 @@
       "title": "Talk is not cheap",
       "slug": "talk-is-not-cheap",
       "publish_date": "2019-09-11",
-      "updated_at": "2026-07-12T22:46:30.749069Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -325,7 +339,7 @@
       "title": "关于微内核的对话",
       "slug": "microkernel",
       "publish_date": "2019-08-19",
-      "updated_at": "2026-07-12T22:46:32.099682Z",
+      "updated_at": null,
       "tags": [
         "computer-science"
       ],
@@ -335,7 +349,7 @@
       "title": "再谈“P vs NP”问题",
       "slug": "pnp2",
       "publish_date": "2019-07-21",
-      "updated_at": "2026-07-13T03:12:49.295062Z",
+      "updated_at": null,
       "tags": [
         "computer-science",
         "education",
@@ -347,7 +361,7 @@
       "title": "学习的智慧",
       "slug": "learning-philosophy",
       "publish_date": "2019-07-12",
-      "updated_at": "2026-07-13T03:08:58.044949Z",
+      "updated_at": null,
       "tags": [
         "education",
         "philosophy"
@@ -358,7 +372,7 @@
       "title": "解谜英语语法",
       "slug": "grammar",
       "publish_date": "2018-11-23",
-      "updated_at": "2026-07-13T05:51:17.064567Z",
+      "updated_at": null,
       "tags": [
         "education"
       ],
@@ -368,7 +382,7 @@
       "title": "解谜计算机科学",
       "slug": "computer-science",
       "publish_date": "2018-04-13",
-      "updated_at": "2026-07-13T02:52:49.361739Z",
+      "updated_at": null,
       "tags": [
         "computer-science",
         "education"
@@ -379,7 +393,7 @@
       "title": "智能合约和形式验证",
       "slug": "smart-contract",
       "publish_date": "2018-02-22",
-      "updated_at": "2026-07-12T22:46:39.330019Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -389,7 +403,7 @@
       "title": "成都的雾霾",
       "slug": "chengdu-pollution",
       "publish_date": "2018-02-16",
-      "updated_at": "2026-07-12T22:46:39.771172Z",
+      "updated_at": null,
       "tags": [
         "environment"
       ],
@@ -399,7 +413,7 @@
       "title": "天才是不存在的",
       "slug": "genius",
       "publish_date": "2017-11-11",
-      "updated_at": "2026-07-12T22:46:39.769930Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -409,7 +423,7 @@
       "title": "网络用语",
       "slug": "words",
       "publish_date": "2017-11-05",
-      "updated_at": "2026-07-12T22:46:40.234511Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -419,7 +433,7 @@
       "title": "AlphaGo Zero 和强人工智能",
       "slug": "alphago-zero",
       "publish_date": "2017-11-04",
-      "updated_at": "2026-07-12T22:46:40.675792Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -429,7 +443,7 @@
       "title": "理性的力量",
       "slug": "power-of-reasoning",
       "publish_date": "2017-11-01",
-      "updated_at": "2026-07-13T03:28:09.569322Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "philosophy",
@@ -441,7 +455,7 @@
       "title": "人体工学",
       "slug": "ergonomics",
       "publish_date": "2017-10-16",
-      "updated_at": "2026-07-12T22:46:41.576322Z",
+      "updated_at": null,
       "tags": [
         "health"
       ],
@@ -451,7 +465,7 @@
       "title": "旅行的智慧",
       "slug": "travel-wisdom",
       "publish_date": "2017-08-14",
-      "updated_at": "2026-07-12T22:46:42.031977Z",
+      "updated_at": null,
       "tags": [
         "lifestyle",
         "philosophy"
@@ -462,7 +476,7 @@
       "title": "生活的智慧",
       "slug": "living-philosophy",
       "publish_date": "2017-07-08",
-      "updated_at": "2026-07-12T22:46:44.282987Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -472,7 +486,7 @@
       "title": "如何掌握所有的程序语言",
       "slug": "master-pl",
       "publish_date": "2017-07-06",
-      "updated_at": "2026-07-12T22:46:49.704497Z",
+      "updated_at": null,
       "tags": [
         "education"
       ],
@@ -482,7 +496,7 @@
       "title": "带猫回国经历",
       "slug": "cat-travel-china",
       "publish_date": "2017-07-06",
-      "updated_at": "2026-07-12T22:46:46.089733Z",
+      "updated_at": null,
       "tags": [
         "lifestyle"
       ],
@@ -492,7 +506,7 @@
       "title": "DSL 的误区",
       "slug": "dsl",
       "publish_date": "2017-05-25",
-      "updated_at": "2026-07-12T22:46:50.157643Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -502,7 +516,7 @@
       "title": "Kotlin 和 Checked Exception",
       "slug": "kotlin",
       "publish_date": "2017-05-23",
-      "updated_at": "2026-07-13T05:00:09.550529Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "type-system"
@@ -513,7 +527,7 @@
       "title": "什么是现实理想主义者",
       "slug": "practical-idealism",
       "publish_date": "2017-05-17",
-      "updated_at": "2026-07-12T22:46:51.502385Z",
+      "updated_at": null,
       "tags": [
         "career",
         "philosophy"
@@ -524,7 +538,7 @@
       "title": "人工智能的局限性",
       "slug": "ai",
       "publish_date": "2017-04-23",
-      "updated_at": "2026-07-12T22:46:51.502418Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -534,7 +548,7 @@
       "title": "经验和洞察力",
       "slug": "experience-and-insight",
       "publish_date": "2017-04-14",
-      "updated_at": "2026-07-12T22:46:52.400840Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -544,7 +558,7 @@
       "title": "C# 的 IDisposable 接口",
       "slug": "c-sharp-disposable",
       "publish_date": "2016-10-13",
-      "updated_at": "2026-07-13T03:25:12.348379Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -554,7 +568,7 @@
       "title": "C 编译器优化的 Bug",
       "slug": "compiler-bug",
       "publish_date": "2016-10-12",
-      "updated_at": "2026-07-12T22:46:53.315378Z",
+      "updated_at": null,
       "tags": [
         "compiler",
         "software-engineering",
@@ -566,7 +580,7 @@
       "title": "对 Rust 语言的分析",
       "slug": "rust",
       "publish_date": "2016-09-18",
-      "updated_at": "2026-07-13T03:19:13.059191Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -576,7 +590,7 @@
       "title": "测试的道理",
       "slug": "tests",
       "publish_date": "2016-09-14",
-      "updated_at": "2026-07-12T22:46:54.665868Z",
+      "updated_at": null,
       "tags": [
         "testing"
       ],
@@ -586,7 +600,7 @@
       "title": "Tesla autopilot 引起致命车祸",
       "slug": "tesla-autopilot-fatal-crash",
       "publish_date": "2016-07-10",
-      "updated_at": "2026-07-12T22:46:55.128613Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -596,7 +610,7 @@
       "title": "养生节目的危害",
       "slug": "yangsheng",
       "publish_date": "2016-06-28",
-      "updated_at": "2026-07-12T22:46:55.571465Z",
+      "updated_at": null,
       "tags": [
         "health"
       ],
@@ -606,7 +620,7 @@
       "title": "Java 有值类型吗？",
       "slug": "java-value-type",
       "publish_date": "2016-06-08",
-      "updated_at": "2026-07-12T22:46:56.018533Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "type-system"
@@ -617,7 +631,7 @@
       "title": "Swift 语言的设计错误",
       "slug": "swift",
       "publish_date": "2016-06-06",
-      "updated_at": "2026-07-13T05:13:13.572171Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -627,7 +641,7 @@
       "title": "正面思维的误区",
       "slug": "positive-thinking",
       "publish_date": "2016-05-22",
-      "updated_at": "2026-07-12T22:46:56.475229Z",
+      "updated_at": null,
       "tags": [
         "tools",
         "philosophy"
@@ -638,7 +652,7 @@
       "title": "博文的自愿付费方式",
       "slug": "pay-blog",
       "publish_date": "2016-04-13",
-      "updated_at": "2026-07-12T22:46:56.480597Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -648,7 +662,7 @@
       "title": "到底是谁在欺负我们读书少？",
       "slug": "cfa",
       "publish_date": "2016-04-07",
-      "updated_at": "2026-07-12T22:46:56.923603Z",
+      "updated_at": null,
       "tags": [
         "compiler"
       ],
@@ -658,7 +672,7 @@
       "title": "我为什么不再做 PL 人",
       "slug": "no-longer-pl",
       "publish_date": "2016-03-31",
-      "updated_at": "2026-07-12T22:46:57.822613Z",
+      "updated_at": null,
       "tags": [
         "career",
         "philosophy"
@@ -669,7 +683,7 @@
       "title": "为什么自动车完全不可以犯错误",
       "slug": "self-driving-car-liability",
       "publish_date": "2016-03-19",
-      "updated_at": "2026-07-12T22:47:00.085259Z",
+      "updated_at": null,
       "tags": [
         "ai",
         "philosophy"
@@ -680,7 +694,7 @@
       "title": "AlphaGo与人工智能",
       "slug": "alpha-go",
       "publish_date": "2016-03-09",
-      "updated_at": "2026-07-12T22:47:00.542896Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -690,7 +704,7 @@
       "title": "我看自动驾驶技术",
       "slug": "self-driving-car",
       "publish_date": "2016-02-12",
-      "updated_at": "2026-07-13T03:17:25.581505Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -700,7 +714,7 @@
       "title": "给Java说句公道话",
       "slug": "java",
       "publish_date": "2016-01-18",
-      "updated_at": "2026-07-13T03:18:06.281609Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -710,7 +724,7 @@
       "title": "Tesla Autopilot",
       "slug": "tesla-autopilot",
       "publish_date": "2016-01-10",
-      "updated_at": "2026-07-12T22:47:01.439728Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -720,7 +734,7 @@
       "title": "Tesla Model X的车门设计问题",
       "slug": "tesla-model-x",
       "publish_date": "2015-12-21",
-      "updated_at": "2026-07-12T22:47:02.791188Z",
+      "updated_at": null,
       "tags": [
         "ai"
       ],
@@ -730,7 +744,7 @@
       "title": "图灵的光环",
       "slug": "turing",
       "publish_date": "2015-10-18",
-      "updated_at": "2026-07-12T22:47:03.695075Z",
+      "updated_at": null,
       "tags": [
         "computer-science"
       ],
@@ -740,7 +754,7 @@
       "title": "对 Parser 的误解",
       "slug": "parser",
       "publish_date": "2015-09-19",
-      "updated_at": "2026-07-12T22:47:04.147187Z",
+      "updated_at": null,
       "tags": [
         "compiler"
       ],
@@ -750,7 +764,7 @@
       "title": "数学和编程",
       "slug": "math",
       "publish_date": "2015-07-04",
-      "updated_at": "2026-07-12T22:47:04.599559Z",
+      "updated_at": null,
       "tags": [
         "education",
         "computer-science"
@@ -761,7 +775,7 @@
       "title": "谈程序的正确性",
       "slug": "program-correctness",
       "publish_date": "2015-07-02",
-      "updated_at": "2026-07-12T22:47:05.052019Z",
+      "updated_at": null,
       "tags": [
         "software-engineering"
       ],
@@ -771,7 +785,7 @@
       "title": "DRY原则的误区",
       "slug": "dry-principle",
       "publish_date": "2015-06-14",
-      "updated_at": "2026-07-12T22:47:05.499423Z",
+      "updated_at": null,
       "tags": [
         "software-engineering"
       ],
@@ -781,7 +795,7 @@
       "title": "所谓软件工程",
       "slug": "software-engineering",
       "publish_date": "2015-06-07",
-      "updated_at": "2026-07-12T22:47:05.950224Z",
+      "updated_at": null,
       "tags": [
         "software-engineering"
       ],
@@ -791,7 +805,7 @@
       "title": "编程的宗派",
       "slug": "paradigms",
       "publish_date": "2015-04-03",
-      "updated_at": "2026-07-13T03:28:17.278236Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -801,7 +815,7 @@
       "title": "英语口音",
       "slug": "accent",
       "publish_date": "2015-03-21",
-      "updated_at": "2026-07-12T22:47:06.944520Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -811,7 +825,7 @@
       "title": "智商的圈套",
       "slug": "trap-of-intelligence",
       "publish_date": "2015-03-20",
-      "updated_at": "2026-07-12T22:47:06.852116Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -821,7 +835,7 @@
       "title": "设计的重要性",
       "slug": "design",
       "publish_date": "2015-03-17",
-      "updated_at": "2026-07-12T22:47:07.304997Z",
+      "updated_at": null,
       "tags": [
         "software-engineering"
       ],
@@ -831,7 +845,7 @@
       "title": "关于Git的礼节",
       "slug": "git-etiquette",
       "publish_date": "2015-03-11",
-      "updated_at": "2026-07-12T22:47:08.208742Z",
+      "updated_at": null,
       "tags": [
         "tools"
       ],
@@ -841,7 +855,7 @@
       "title": "怎样尊重一个程序员",
       "slug": "how-to-respect-a-programmer",
       "publish_date": "2015-03-03",
-      "updated_at": "2026-07-12T22:47:08.212256Z",
+      "updated_at": null,
       "tags": [
         "career"
       ],
@@ -851,7 +865,7 @@
       "title": "所谓“人为错误”",
       "slug": "human-errors",
       "publish_date": "2015-02-24",
-      "updated_at": "2026-07-12T22:47:08.662863Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -861,7 +875,7 @@
       "title": "其他人的BUG",
       "slug": "other-peoples-bug",
       "publish_date": "2015-02-20",
-      "updated_at": "2026-07-12T22:47:09.115083Z",
+      "updated_at": null,
       "tags": [
         "software-engineering",
         "education",
@@ -873,7 +887,7 @@
       "title": "创造者的思维方式",
       "slug": "creative-thinking",
       "publish_date": "2015-02-01",
-      "updated_at": "2026-07-12T22:47:09.571375Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -883,7 +897,7 @@
       "title": "小费和中国人的尊严",
       "slug": "tips",
       "publish_date": "2015-01-19",
-      "updated_at": "2026-07-12T22:55:26.415508Z",
+      "updated_at": null,
       "tags": [
         "lifestyle"
       ],
@@ -893,7 +907,7 @@
       "title": "恶评《星际穿越》",
       "slug": "interstellar",
       "publish_date": "2014-11-12",
-      "updated_at": "2026-07-12T22:47:10.907590Z",
+      "updated_at": null,
       "tags": [
         "lifestyle"
       ],
@@ -903,7 +917,7 @@
       "title": "关系式模型的实质",
       "slug": "relational",
       "publish_date": "2014-04-24",
-      "updated_at": "2026-07-12T22:47:11.817308Z",
+      "updated_at": null,
       "tags": [
         "computer-science"
       ],
@@ -913,7 +927,7 @@
       "title": "对 Go 语言的综合评价",
       "slug": "golang",
       "publish_date": "2014-04-18",
-      "updated_at": "2026-07-13T04:26:24.001975Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -923,7 +937,7 @@
       "title": "一个对 Dijkstra 的采访视频",
       "slug": "dijkstra-interview",
       "publish_date": "2014-02-18",
-      "updated_at": "2026-07-12T22:47:12.720384Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "computer-science",
@@ -935,7 +949,7 @@
       "title": "程序员的心理疾病",
       "slug": "programmer-mental",
       "publish_date": "2014-02-09",
-      "updated_at": "2026-07-12T22:47:12.714130Z",
+      "updated_at": null,
       "tags": [
         "career",
         "philosophy"
@@ -946,7 +960,7 @@
       "title": "程序语言与它们的工具",
       "slug": "pl-tool",
       "publish_date": "2014-02-04",
-      "updated_at": "2026-07-12T22:47:14.065847Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "tools"
@@ -957,7 +971,7 @@
       "title": "RubySonar：一个 Ruby 静态分析器",
       "slug": "rubysonar",
       "publish_date": "2014-01-28",
-      "updated_at": "2026-07-12T22:47:14.513319Z",
+      "updated_at": null,
       "tags": [
         "software-engineering",
         "tools",
@@ -969,7 +983,7 @@
       "title": "我和权威的故事",
       "slug": "authority",
       "publish_date": "2014-01-04",
-      "updated_at": "2026-07-12T22:47:14.970940Z",
+      "updated_at": null,
       "tags": [
         "philosophy",
         "education"
@@ -980,7 +994,7 @@
       "title": "PySonar2 与 Sourcegraph 集成完毕",
       "slug": "pysonar2-sg",
       "publish_date": "2013-11-25",
-      "updated_at": "2026-07-12T22:47:15.873630Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "software-engineering",
@@ -992,7 +1006,7 @@
       "title": "丘奇和图灵",
       "slug": "church-turing",
       "publish_date": "2013-07-13",
-      "updated_at": "2026-07-12T22:47:16.319172Z",
+      "updated_at": null,
       "tags": [
         "computer-science"
       ],
@@ -1002,7 +1016,7 @@
       "title": "原因与证明",
       "slug": "reason-and-proof",
       "publish_date": "2013-04-26",
-      "updated_at": "2026-07-12T22:47:19.017906Z",
+      "updated_at": null,
       "tags": [
         "philosophy",
         "computer-science"
@@ -1013,7 +1027,7 @@
       "title": "编辑器与IDE",
       "slug": "editor-ide",
       "publish_date": "2013-04-20",
-      "updated_at": "2026-07-13T04:49:25.529462Z",
+      "updated_at": null,
       "tags": [
         "tools"
       ],
@@ -1023,7 +1037,7 @@
       "title": "程序语言的常见设计错误(2) - 试图容纳世界",
       "slug": "language-design-mistake2",
       "publish_date": "2013-04-18",
-      "updated_at": "2026-07-12T22:47:19.472505Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -1033,7 +1047,7 @@
       "title": "关于语言的思考",
       "slug": "languages",
       "publish_date": "2013-04-17",
-      "updated_at": "2026-07-12T22:47:19.922638Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -1043,7 +1057,7 @@
       "title": "Yoda 表示法错在哪里",
       "slug": "yoda-notation",
       "publish_date": "2013-04-16",
-      "updated_at": "2026-07-12T22:47:19.919337Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -1053,7 +1067,7 @@
       "title": "几个超炫的专业词汇",
       "slug": "terminology",
       "publish_date": "2013-04-15",
-      "updated_at": "2026-07-12T22:47:19.930156Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -1063,7 +1077,7 @@
       "title": "标准化试卷标记语言",
       "slug": "standard-exam-language",
       "publish_date": "2013-04-14",
-      "updated_at": "2026-07-13T02:24:06.243054Z",
+      "updated_at": null,
       "tags": [
         "computer-science",
         "philosophy",
@@ -1075,7 +1089,7 @@
       "title": "一种新的操作系统设计",
       "slug": "os-design",
       "publish_date": "2013-04-14",
-      "updated_at": "2026-07-12T22:47:20.375747Z",
+      "updated_at": null,
       "tags": [
         "computer-science"
       ],
@@ -1085,7 +1099,7 @@
       "title": "Markdown 的一些问题",
       "slug": "markdown",
       "publish_date": "2013-04-14",
-      "updated_at": "2026-07-12T22:47:20.383109Z",
+      "updated_at": null,
       "tags": [
         "tools"
       ],
@@ -1095,7 +1109,7 @@
       "title": "谈程序的“通用性”",
       "slug": "generality",
       "publish_date": "2013-04-13",
-      "updated_at": "2026-07-12T22:47:20.819593Z",
+      "updated_at": null,
       "tags": [
         "philosophy",
         "software-engineering"
@@ -1106,7 +1120,7 @@
       "title": "什么是启发",
       "slug": "inspiration",
       "publish_date": "2013-04-12",
-      "updated_at": "2026-07-13T04:45:10.026380Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -1116,7 +1130,7 @@
       "title": "Scheme 编程环境的设置",
       "slug": "scheme-setup",
       "publish_date": "2013-04-11",
-      "updated_at": "2026-07-12T22:47:21.280056Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "tools"
@@ -1127,7 +1141,7 @@
       "title": "我为什么离开 Cornell",
       "slug": "cornell",
       "publish_date": "2013-04-10",
-      "updated_at": "2026-07-13T01:38:01.371895Z",
+      "updated_at": null,
       "tags": [
         "tools"
       ],
@@ -1137,7 +1151,7 @@
       "title": "测试驱动开发",
       "slug": "test-driven-dev",
       "publish_date": "2013-04-07",
-      "updated_at": "2026-07-12T22:47:21.283056Z",
+      "updated_at": null,
       "tags": [
         "testing"
       ],
@@ -1147,7 +1161,7 @@
       "title": "Currying 的局限性",
       "slug": "currying",
       "publish_date": "2013-04-02",
-      "updated_at": "2026-07-12T22:47:21.730011Z",
+      "updated_at": null,
       "tags": [
         "functional-programming"
       ],
@@ -1157,7 +1171,7 @@
       "title": "惰性求值",
       "slug": "lazy-evaluation",
       "publish_date": "2013-04-01",
-      "updated_at": "2026-07-12T22:47:21.725496Z",
+      "updated_at": null,
       "tags": [
         "functional-programming"
       ],
@@ -1167,7 +1181,7 @@
       "title": "Hindley-Milner 类型系统的根本性错误",
       "slug": "hindley-milner",
       "publish_date": "2013-04-01",
-      "updated_at": "2026-07-12T22:47:22.179901Z",
+      "updated_at": null,
       "tags": [
         "type-system"
       ],
@@ -1177,7 +1191,7 @@
       "title": "函数式语言的宗教",
       "slug": "purely-functional",
       "publish_date": "2013-03-31",
-      "updated_at": "2026-07-13T02:38:43.304075Z",
+      "updated_at": null,
       "tags": [
         "functional-programming"
       ],
@@ -1187,7 +1201,7 @@
       "title": "什么是“脚本语言”",
       "slug": "scripting-language",
       "publish_date": "2013-03-29",
-      "updated_at": "2026-07-12T22:47:22.626328Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -1197,7 +1211,7 @@
       "title": "Lisp 已死，Lisp 万岁！",
       "slug": "lisp-dead-alive",
       "publish_date": "2013-03-26",
-      "updated_at": "2026-07-12T22:47:23.081433Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -1207,7 +1221,7 @@
       "title": "论对东西的崇拜",
       "slug": "tools",
       "publish_date": "2013-03-24",
-      "updated_at": "2026-07-12T22:47:23.534242Z",
+      "updated_at": null,
       "tags": [
         "tools"
       ],
@@ -1217,7 +1231,7 @@
       "title": "“解决问题”与“消灭问题”",
       "slug": "eliminate-problems",
       "publish_date": "2013-03-19",
-      "updated_at": "2026-07-12T22:47:23.528813Z",
+      "updated_at": null,
       "tags": [
         "philosophy"
       ],
@@ -1227,7 +1241,7 @@
       "title": "程序语言的常见设计错误(1) - 片面追求短小",
       "slug": "language-design-mistake1",
       "publish_date": "2013-03-15",
-      "updated_at": "2026-07-12T22:47:23.527813Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -1237,7 +1251,7 @@
       "title": "谈语法",
       "slug": "on-syntax",
       "publish_date": "2013-03-08",
-      "updated_at": "2026-07-12T22:47:23.979777Z",
+      "updated_at": null,
       "tags": [
         "programming-language"
       ],
@@ -1247,7 +1261,7 @@
       "title": "谈 Linux，Windows 和 Mac",
       "slug": "linux-windows-mac",
       "publish_date": "2013-03-07",
-      "updated_at": "2026-07-12T22:47:23.980788Z",
+      "updated_at": null,
       "tags": [
         "tools"
       ],
@@ -1257,7 +1271,7 @@
       "title": "解密\"设计模式\"",
       "slug": "design-patterns",
       "publish_date": "2013-03-07",
-      "updated_at": "2026-07-12T22:47:23.976477Z",
+      "updated_at": null,
       "tags": [
         "software-engineering"
       ],
@@ -1267,7 +1281,7 @@
       "title": "Oberon 操作系统：被忽略的珍宝",
       "slug": "oberon",
       "publish_date": "2013-03-07",
-      "updated_at": "2026-07-12T22:47:24.435307Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "tools"
@@ -1278,7 +1292,7 @@
       "title": "Braid - 一个发人深思的游戏",
       "slug": "braid",
       "publish_date": "2013-03-04",
-      "updated_at": "2026-07-12T22:47:24.878635Z",
+      "updated_at": null,
       "tags": [
         "lifestyle",
         "philosophy"
@@ -1289,7 +1303,7 @@
       "title": "什么是语义学",
       "slug": "semantics",
       "publish_date": "2012-07-25",
-      "updated_at": "2026-07-13T05:03:16.492879Z",
+      "updated_at": null,
       "tags": [
         "programming-language",
         "computer-science"
@@ -1300,7 +1314,7 @@
       "title": "我和 Google 的故事（2012 年原版）",
       "slug": "google-story",
       "publish_date": "2012-07-12",
-      "updated_at": "2026-07-13T05:50:03.010343Z",
+      "updated_at": null,
       "tags": [
         "career"
       ],
@@ -1310,10 +1324,43 @@
       "title": "什么是\"对用户友好\"",
       "slug": "user-friendliness",
       "publish_date": "2012-05-18",
-      "updated_at": "2026-07-12T22:47:26.236309Z",
+      "updated_at": null,
       "tags": [
         "tools",
         "philosophy"
+      ],
+      "has_images": true
+    },
+    "mites": {
+      "title": "我和螨虫的故事",
+      "slug": "mites",
+      "publish_date": "2026-07-15",
+      "updated_at": null,
+      "tags": [
+        "life",
+        "health"
+      ],
+      "has_images": true
+    },
+    "mosquito": {
+      "title": "如何彻底消灭家里的蚊子",
+      "slug": "mosquito",
+      "publish_date": "2026-07-10",
+      "updated_at": null,
+      "tags": [
+        "life",
+        "health"
+      ],
+      "has_images": true
+    },
+    "athletes-foot": {
+      "title": "根治脚气的简单方法",
+      "slug": "athletes-foot",
+      "publish_date": "2023-10-25",
+      "updated_at": null,
+      "tags": [
+        "life",
+        "health"
       ],
       "has_images": true
     }
