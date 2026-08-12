@@ -321,6 +321,7 @@ def crawl(force: bool = False):
     image_failures = []
 
     for i, post_meta in enumerate(all_posts):
+        existing = None
         slug = post_meta["slug"]
         source_url = f"{BASE_URL}/posts/{slug}"
         updated_at = post_meta.get("updated_at", "")
