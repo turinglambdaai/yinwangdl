@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""
+r"""
 One-shot fix for malformed code fences produced by a bug in crawler.py's
 format_content() (now fixed).
 
