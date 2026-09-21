@@ -2,7 +2,7 @@
 
 王垠博客（[yinwang.org](https://www.yinwang.org)）文章自动备份。通过 GitHub Actions 每周自动爬取，将所有博文保存为 Markdown 文件并下载图片。已删除的文章通过 Git 历史保留。
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 [English](README.md) · **中文**
 
@@ -88,4 +88,4 @@ source: https://www.yinwang.org/posts/my-blog-post
 
 ## 许可证
 
-基于 [Apache License 2.0](LICENSE) 开源。
+仓库代码（脚本与工作流）基于 [MIT License](LICENSE) 开源；posts/ 下的博客内容版权归原作者所有，仅供个人存档阅读。
