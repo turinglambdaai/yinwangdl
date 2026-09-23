@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
   <div class="page-layout">
     <aside class="ad-sidebar ad-sidebar--left">
       <ins class="adsbygoogle"
@@ -49,10 +50,6 @@
       <footer class="site-footer">
         <div class="container">
           <p>内容版权归原作者所有 | 本站仅作备份存档 | <a href="https://cloud.umami.is/share/XoOzcFrnLbRY6EQH" target="_blank" rel="noopener">访问统计</a></p>
-          <div class="footer-wechat">
-            <img src="/wechat-qr.jpg" alt="公众号 TuringLambdaAI" width="64" height="64" loading="lazy">
-            <span>扫码关注公众号</span>
-          </div>
         </div>
       </footer>
     </div>
@@ -81,11 +78,76 @@
   </div>
 </div>
 
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <img alt="">
+</div>
+
 <button id="search-trigger" class="search-trigger" aria-label="搜索">
   <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="13" y1="13" x2="18" y2="18"/></svg>
   <span class="search-trigger-text">搜索</span>
   <span class="search-trigger-tip">Ctrl K</span>
 </button>
+
+<script>
+(function(){
+  /* ---- reading progress bar ---- */
+  var bar=document.getElementById('reading-progress');
+  var article=document.querySelector('.post');
+  if(bar&&article){
+    var ticking=false;
+    var update=function(){
+      var r=article.getBoundingClientRect();
+      var total=r.height-window.innerHeight;
+      var passed=Math.min(Math.max(-r.top,0),Math.max(total,1));
+      bar.style.width=(total>0?passed/total*100:100)+'%';
+      ticking=false;
+    };
+    window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
+    window.addEventListener('resize',update,{passive:true});
+    update();
+  }
+
+  /* ---- images: lazy load + lightbox ---- */
+  var lb=document.getElementById('lightbox');
+  if(lb){
+    var lbImg=lb.querySelector('img');
+    var closeLb=function(){lb.classList.remove('active');lbImg.src='';lb.setAttribute('aria-hidden','true');document.body.style.overflow='';};
+    document.querySelectorAll('.post-content img').forEach(function(img){
+      img.loading='lazy';img.decoding='async';
+      img.addEventListener('click',function(){
+        lbImg.src=img.currentSrc||img.src;lbImg.alt=img.alt||'';
+        lb.classList.add('active');lb.setAttribute('aria-hidden','false');
+        document.body.style.overflow='hidden';
+      });
+    });
+    lb.addEventListener('click',closeLb);
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('active'))closeLb();});
+  }
+
+  /* ---- post TOC (progressive enhancement, built from anchored h2/h3) ---- */
+  var content=document.querySelector('.post-content');
+  if(content){
+    var heads=content.querySelectorAll('h2[id],h3[id]');
+    if(heads.length>=3){
+      var toc=document.createElement('details');
+      toc.className='post-toc';
+      var sum=document.createElement('summary');
+      sum.textContent='本文目录';
+      var list=document.createElement('div');
+      list.className='post-toc-list';
+      heads.forEach(function(h){
+        var a=document.createElement('a');
+        a.href='#'+h.id;
+        a.textContent=h.textContent;
+        a.className='post-toc-'+h.tagName.toLowerCase();
+        list.appendChild(a);
+      });
+      toc.appendChild(sum);toc.appendChild(list);
+      content.parentNode.insertBefore(toc,content);
+    }
+  }
+})();
+</script>
 
 <script>
 (function(){

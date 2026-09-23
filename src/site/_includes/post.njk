@@ -20,6 +20,33 @@ layout: base.njk
   <div class="post-content">
     {{ content | safe }}
   </div>
+
+  <aside class="wechat-cta">
+    <div class="wechat-cta-body">
+      <div class="wechat-cta-title">关注公众号，第一时间获取更新</div>
+      <p class="wechat-cta-desc">本站新文章会同步推送，还有更多技术内容。微信搜索 <strong>TuringLambdaAI</strong>，或扫右侧二维码关注。</p>
+      <p class="wechat-cta-hint">长按识别二维码关注</p>
+    </div>
+    <img class="wechat-cta-qr" src="/wechat-qr.jpg" alt="公众号 TuringLambdaAI 二维码" width="112" height="112" loading="lazy">
+  </aside>
+
+  {% if olderPost or newerPost %}
+  <nav class="post-nav" aria-label="文章导航">
+    {% if olderPost %}
+    <a class="post-nav-item post-nav-older" href="{{ olderPost.url }}">
+      <span class="post-nav-label">&larr; 更早一篇</span>
+      <span class="post-nav-title">{{ olderPost.data.title }}</span>
+    </a>
+    {% endif %}
+    {% if newerPost %}
+    <a class="post-nav-item post-nav-newer" href="{{ newerPost.url }}">
+      <span class="post-nav-label">更新一篇 &rarr;</span>
+      <span class="post-nav-title">{{ newerPost.data.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+  {% endif %}
+
   <div class="ad-mobile ad-mobile--inpost">
     <ins class="adsbygoogle"
       style="display:block"

@@ -1,5 +1,9 @@
 require("dotenv").config();
 
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const hljs = require("highlight.js");
+
 module.exports = function (eleventyConfig) {
   // Passthrough copies
   eleventyConfig.addPassthroughCopy("images");
@@ -9,6 +13,24 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/site/favicon.svg": "favicon.svg" });
   eleventyConfig.addPassthroughCopy({ "src/site/CNAME": "CNAME" });
   eleventyConfig.addPassthroughCopy({ "src/site/wechat-qr.jpg": "wechat-qr.jpg" });
+
+  // Markdown: syntax highlighting + heading anchors (CJK titles keep their
+  // text as the id; browsers percent-encode the fragment transparently).
+  const md = markdownIt({
+    html: true,
+    highlight: (str, lang) => {
+      if (lang && hljs.getLanguage(lang)) {
+        try {
+          return hljs.highlight(str, { language: lang }).value;
+        } catch (_) { /* fall through */ }
+      }
+      return ""; // let markdown-it escape it
+    },
+  }).use(markdownItAnchor, {
+    level: [2, 3],
+    slugify: (s) => s.trim().toLowerCase().replace(/\s+/g, "-"),
+  });
+  eleventyConfig.setLibrary("md", md);
 
   // Date formatting filter
   eleventyConfig.addFilter("isodate", (date) => {
@@ -25,9 +47,10 @@ module.exports = function (eleventyConfig) {
     return iso.substring(0, 4);
   });
 
-  // Sort posts by created date descending (normalize to ISO string)
+  // Sort posts by created date descending (normalize to ISO string) and
+  // attach older/newer neighbors for post-page navigation.
   eleventyConfig.addCollection("post", function (collectionApi) {
-    return collectionApi
+    const list = collectionApi
       .getFilteredByTag("post")
       .sort((a, b) => {
         const toIso = (d) => {
@@ -38,6 +61,11 @@ module.exports = function (eleventyConfig) {
         };
         return toIso(b.data.created).localeCompare(toIso(a.data.created));
       });
+    list.forEach((p, i) => {
+      p.data.olderPost = list[i + 1] || null;
+      p.data.newerPost = list[i - 1] || null;
+    });
+    return list;
   });
 
   return {
