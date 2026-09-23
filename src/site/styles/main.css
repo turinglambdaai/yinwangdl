@@ -418,6 +418,26 @@ a:hover { color: var(--accent-hover); }
   border-top: 1px solid var(--border);
 }
 
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  color: var(--text-2);
+  border-bottom: 1px solid var(--border);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.footer-links .sep {
+  margin: 0 8px;
+  color: var(--border);
+}
+
 /* ---- Responsive ---- */
 
 @media (max-width: 640px) {
