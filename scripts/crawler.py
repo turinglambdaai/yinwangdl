@@ -15,6 +15,9 @@ from pathlib import Path
 import requests
 import urllib3
 
+from fix_bold_spacing import fix_emphasis_spacing
+from normalize_code_blocks import indented_code_to_fences
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BASE_URL = "https://www.yinwang.org"
@@ -151,6 +154,10 @@ def format_content(content: str) -> str:
     # --- heading-depth: #### or deeper -> bold paragraph start ---
     content = re.sub(r"^#{4,}\s+(.+)$", r"**\1**", content, flags=re.MULTILINE)
 
+    # --- indented-code: top-level indented code blocks break in the
+    # Eleventy pipeline, convert them to fenced blocks first ---
+    content = indented_code_to_fences(content)
+
     # --- callout: strip Obsidian callout syntax ---
     content = re.sub(
         r"^>\s*\[!\w+\]\s*(\*\*.+\*\*)\s*$",
@@ -188,13 +195,17 @@ def format_content(content: str) -> str:
     content = "\n".join(lines)
 
     # --- cjk-spacing: Pangu spacing (CJK <-> half-width) ---
+    # NOTE: the half-width class deliberately EXCLUDES markdown emphasis
+    # markers (* _ ~). Inserting a space there breaks `**bold**` into
+    # `** bold **`, which CommonMark renders as literal asterisks.
+
     # Step 1: Remove existing incorrect spaces
     content = re.sub(r"([一-鿿，。！？；：]) ([a-zA-Z0-9%])", r"\1\2", content)
     content = re.sub(r"([a-zA-Z0-9%]) ([一-鿿，。！？；：])", r"\1\2", content)
 
     # Step 2: Insert spaces between CJK and half-width characters
-    content = re.sub(r"([一-鿿，。！？；：])([a-zA-Z0-9@#$%&*_+={}<>/\\|~^])", r"\1 \2", content)
-    content = re.sub(r"([a-zA-Z0-9@#$%&*_+={}<>/\\|~^])([一-鿿，。！？；：])", r"\1 \2", content)
+    content = re.sub(r"([一-鿿，。！？；：])([a-zA-Z0-9@#$%&+={}<>/\\|^])", r"\1 \2", content)
+    content = re.sub(r"([a-zA-Z0-9@#$%&+={}<>/\\|^])([一-鿿，。！？；：])", r"\1 \2", content)
 
     # Step 3: Fix false positives
     # 3a. Collapse spaces inside markdown links: CJK ] ( and ] CJK (
@@ -231,6 +242,9 @@ def format_content(content: str) -> str:
 
     # --- strip trailing whitespace ---
     content = re.sub(r" +\n", "\n", content)
+
+    # --- emphasis-spacing: heal `** bold **` back to `**bold**` ---
+    content = fix_emphasis_spacing(content)
 
     return content
 

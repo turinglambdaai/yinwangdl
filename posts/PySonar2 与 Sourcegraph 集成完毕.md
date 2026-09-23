@@ -14,9 +14,11 @@ PySonar2 的类型推导系统能够不依赖类型标记却精确地分析出 P
 
 最有意思的是那个 `render_template`。 PySonar2 为它推导出来的类型是一个 intersection type ：
 
-	templating.render_template(template_name_or_list, **context)
-	str -> ?
-	| [str] -> ?
+```text
+templating.render_template(template_name_or_list, **context)
+str -> ?
+| [str] -> ?
+```
 
 这是说，第一个参数 `template_name_or_list` 的类型或者是 `str` 或者是 `[str]` （含有 `str` 的 `list`）。如果你给它 `str` 它就会输出 `?` （PySonar2 不知道它会输出什么），而如果你给它 `[str]`，它输出 `?`.
 
@@ -26,7 +28,7 @@ PySonar2 的类型推导系统能够不依赖类型标记却精确地分析出 P
 
 Sourcegraph 有一些不为人知的巧妙设计，但是由于 Quinn 和 Beyang 太谦虚而且太忙了，所以都没来的及宣传。我现在偷闲在这里透露两招小窍门。
 
-** 启动分析你需要的 GitHub 代码库 **
+**启动分析你需要的 GitHub 代码库**
 
 目前这个功能只限于 GitHub 。如果在 Sourcegraph 网站上面没有找到你需要的 GitHub 代码库，这不等于你需要等我们来启动分析。你可以自己动手！
 
@@ -36,11 +38,13 @@ Sourcegraph 有一些不为人知的巧妙设计，但是由于 Quinn 和 Beyang
 
 举个例子，如果你想分析 `http://github.com/myname/myrepo` 的代码，就在浏览器输入地址：
 
-	http://sourcegraph.com/github.com/myname/myrepo
+```text
+http://sourcegraph.com/github.com/myname/myrepo
+```
 
 如果 Sourcegraph 还没有分析过这个 repo 它就会把它加入到工作队列里，然后你可以做其他的事情或者浏览其他的代码。分析完毕之后浏览器就会自动跳转到你所需要的代码库。一般大小的代码库几分钟到半个小时就会处理完毕。
 
-** 在你的 GitHub README 里面使用 Sourcegraph 徽章 **
+**在你的 GitHub README 里面使用 Sourcegraph 徽章**
 
 你也许发现有些人在自己的 GitHub 里有 Sourcegraph 徽章，这样一来别人就能得知你的代码库的一些统计信息。比如我的 psydiff 的 README 里面有这样一个：
 
