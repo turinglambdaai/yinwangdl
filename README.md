@@ -11,7 +11,7 @@ Auto-crawled archive of [yinwang.org](https://www.yinwang.org) blog posts by Wan
 - **Automated weekly crawl** via GitHub Actions (every Monday at 03:00 UTC)
 - **Incremental updates** — only downloads new or modified posts
 - **Full content archival** — posts saved as Markdown, images downloaded locally
-- **Obsidian compatible** — file names are Chinese titles, frontmatter follows Obsidian conventions
+- **Self-contained Markdown** — file name = URL slug, Chinese title in frontmatter, body starts with an H1 heading
 - **Deduplication** — prevents duplicate files by tracking source URLs
 - **Static site generation** — builds a searchable website with Eleventy and deploys to Vercel/GitHub Pages
 
@@ -72,19 +72,26 @@ npm run dev      # Local dev server with live reload
 
 ### Post format
 
-Each Markdown file includes YAML frontmatter:
+Each Markdown file is named after its URL slug and is fully self-contained:
 
-```yaml
+```markdown
 ---
+title: "My Blog Post"
 slug: my-blog-post
 author: 王垠
 created: 2025-01-15
 source: https://www.yinwang.org/posts/my-blog-post
 ---
+# My Blog Post
+
+## First Section
+
+Body text...
 ```
 
-- File name uses the Chinese title from the API (Obsidian-friendly).
-- Body text starts at `##` level (the file name acts as the `#` heading).
+- File name = `slug` (= URL `/posts/{slug}/` = image dir `images/{slug}/`).
+- The Chinese title lives in frontmatter; the body starts with an H1 heading.
+- Top-level sections use H2; the crawler normalizes heading depth and code fences automatically.
 
 ## License
 

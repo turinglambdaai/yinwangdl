@@ -11,7 +11,7 @@
 - **每周自动爬取** — 通过 GitHub Actions 执行（每周一 UTC 03:00）
 - **增量更新** — 仅下载新增或修改的文章
 - **完整内容归档** — 文章保存为 Markdown，图片下载到本地
-- **Obsidian 兼容** — 文件名为中文标题，frontmatter 遵循 Obsidian 规范
+- **自包含 Markdown** — 文件名 = URL slug，中文标题存 frontmatter，正文以 H1 标题开始
 - **自动去重** — 通过 source URL 跟踪，避免重复文件
 - **静态站点生成** — 使用 Eleventy 构建可搜索的网站，部署到 Vercel/GitHub Pages
 
@@ -19,7 +19,7 @@
 
 ```
 yinwangdl/
-├── posts/           # Markdown 文章（文件名 = 中文标题）
+├── posts/           # Markdown 文章（文件名 = slug）
 ├── images/          # 文章图片（按 URL slug 分目录）
 ├── scripts/         # 爬虫和工具脚本
 ├── src/site/        # Eleventy 静态站点源码
@@ -72,19 +72,26 @@ npm run dev      # 本地开发服务器，支持热重载
 
 ### 文章格式
 
-每篇 Markdown 文件包含 YAML frontmatter：
+每个 Markdown 文件以 URL slug 命名，完全自包含：
 
-```yaml
+```markdown
 ---
+title: "我的博客文章"
 slug: my-blog-post
 author: 王垠
 created: 2025-01-15
 source: https://www.yinwang.org/posts/my-blog-post
 ---
+# 我的博客文章
+
+## 第一节
+
+正文……
 ```
 
-- 文件名使用 API 返回的中文标题（兼容 Obsidian）。
-- 正文从 `##` 级别开始（文件名即一级标题）。
+- 文件名 = `slug`（即 URL `/posts/{slug}/` 与图片目录 `images/{slug}/`，三者统一）
+- 中文标题存于 frontmatter 的 `title` 字段；正文以 H1 标题开始
+- 大节用 H2；爬虫会自动规范化标题层级与代码围栏
 
 ## 许可证
 

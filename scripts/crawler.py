@@ -148,8 +148,40 @@ def replace_image_paths(content: str, slug: str) -> str:
     return content
 
 
+def promote_h3_to_h2(content: str) -> str:
+    """If the body has no H2 but has H3s, promote H3 -> H2 so the top
+    section level is consistently H2 under the post's H1 title."""
+    fence = re.compile(r"^\s*`{3,}")
+    in_fence = False
+    has_h2 = has_h3 = False
+    for line in content.split("\n"):
+        if fence.match(line):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if re.match(r"^## ", line):
+            has_h2 = True
+        elif re.match(r"^### ", line):
+            has_h3 = True
+    if has_h2 or not has_h3:
+        return content
+    in_fence = False
+    out = []
+    for line in content.split("\n"):
+        if fence.match(line):
+            in_fence = not in_fence
+            out.append(line)
+            continue
+        out.append(re.sub(r"^### ", "## ", line) if not in_fence else line)
+    return "\n".join(out)
+
+
 def format_content(content: str) -> str:
-    """Apply tlai-format style formatting rules to content."""
+    """Apply site formatting rules to content."""
+
+    # --- heading-level: top section level is H2 (post title is the H1) ---
+    content = promote_h3_to_h2(content)
 
     # --- heading-depth: #### or deeper -> bold paragraph start ---
     content = re.sub(r"^#{4,}\s+(.+)$", r"**\1**", content, flags=re.MULTILINE)
@@ -263,15 +295,18 @@ def build_source_index():
 
 
 def generate_frontmatter(post: dict) -> str:
-    """Generate YAML frontmatter for a post."""
-    return (
-        "---\n"
-        f"slug: {post['slug']}\n"
-        f"author: 王垠\n"
-        f"created: {post.get('publish_date', '')}\n"
-        f"source: {BASE_URL}/posts/{post['slug']}\n"
-        "---\n"
-    )
+    """Generate YAML frontmatter for a post (title quoted for YAML safety)."""
+    title = str(post.get("title") or post["slug"]).replace('"', '\\"')
+    lines = [
+        f'title: "{title}"',
+        f"slug: {post['slug']}",
+        "author: 王垠",
+        f"created: {post.get('publish_date', '')}",
+    ]
+    if post.get("updated_at"):
+        lines.append(f"updated: {post['updated_at']}")
+    lines.append(f"source: {BASE_URL}/posts/{post['slug']}")
+    return "---\n" + "\n".join(lines) + "\n---\n"
 
 
 def sanitize_filename(name: str) -> str:
@@ -282,17 +317,18 @@ def sanitize_filename(name: str) -> str:
 
 
 def save_post(post: dict, content: str) -> None:
-    """Save a post as a markdown file with Chinese title as filename."""
+    """Save a post as {slug}.md: title in frontmatter, body starts with H1."""
     slug = post["slug"]
-    title = sanitize_filename(post.get("title", slug))
+    title = str(post.get("title") or slug).strip() or slug
     frontmatter = generate_frontmatter(post)
     formatted = format_content(content)
     content_with_images = replace_image_paths(formatted, slug)
+    body = f"# {title}\n\n{content_with_images}"
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
-    filepath = POSTS_DIR / f"{title}.md"
-    filepath.write_text(frontmatter + content_with_images, encoding="utf-8")
-    print(f"  Saved: {title}.md")
+    filepath = POSTS_DIR / f"{sanitize_filename(slug)}.md"
+    filepath.write_text(frontmatter + body, encoding="utf-8")
+    print(f"  Saved: {filepath.name}")
 
 
 def download_post_images(slug: str, content: str) -> list[str]:

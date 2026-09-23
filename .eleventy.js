@@ -30,6 +30,14 @@ module.exports = function (eleventyConfig) {
     level: [2, 3],
     slugify: (s) => s.trim().toLowerCase().replace(/\s+/g, "-"),
   });
+  // Post files are self-contained (# Title as the first line); the page
+  // header already renders the title, so drop a leading H1 at render time.
+  md.core.ruler.after("block", "strip_leading_h1", (state) => {
+    const t = state.tokens;
+    if (t.length >= 3 && t[0].type === "heading_open" && t[0].tag === "h1") {
+      state.tokens = t.slice(3);
+    }
+  });
   eleventyConfig.setLibrary("md", md);
 
   // Date formatting filter
