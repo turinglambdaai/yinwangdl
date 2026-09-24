@@ -643,8 +643,10 @@ a:hover { color: var(--accent-hover); }
 .search-results {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior: contain;
   min-height: 0;
+  word-break: break-word;
 }
 
 .search-results::-webkit-scrollbar {
@@ -682,6 +684,7 @@ a:hover { color: var(--accent-hover); }
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .search-result-title mark {
@@ -704,6 +707,7 @@ a:hover { color: var(--accent-hover); }
   text-align: center;
   font-size: 0.88em;
   color: var(--text-3);
+  overflow-wrap: anywhere;
 }
 
 /* ---- Responsive Search ---- */

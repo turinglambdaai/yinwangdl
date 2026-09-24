@@ -189,7 +189,7 @@
       if(!matched.length){results.innerHTML='<div class="search-hint">没有找到「'+q.replace(/</g,'&lt;')+'」相关的文章</div>';return;}
       var html='';
       matched.slice(0,15).forEach(function(p){
-        var t=p.title;
+        var t=p.title.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
         var idx=t.toLowerCase().indexOf(q);
         if(idx!==-1){t=t.substring(0,idx)+'<mark>'+t.substring(idx,idx+q.length)+'</mark>'+t.substring(idx+q.length);}
         html+='<a href="'+p.url+'" class="search-result-item">'
