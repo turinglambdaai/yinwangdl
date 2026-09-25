@@ -40,6 +40,26 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.setLibrary("md", md);
 
+  // Plain-text excerpt for the RSS feed (kept short on purpose: the
+  // content belongs to its author, the feed links back instead of
+  // re-publishing full text)
+  eleventyConfig.addFilter("excerpt", (s, n = 140) => {
+    const text = String(s).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    return text.length > n ? text.slice(0, n) + "…" : text;
+  });
+
+  // Minimal Atom-feed helpers (no plugin dependency)
+  eleventyConfig.addFilter("absoluteUrl", (path, base) => new URL(path, base).href);
+  eleventyConfig.addFilter("dateToRfc3339", (d) =>
+    (d instanceof Date ? d : new Date(d)).toISOString()
+  );
+  eleventyConfig.addFilter("getNewestCollectionItemDate", (collection) =>
+    new Date(Math.max(...collection.map((p) => +new Date(p.date || p.data.created || 0))))
+  );
+  eleventyConfig.addFilter("htmlEntityGenerator", (s) =>
+    String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]))
+  );
+
   // Date formatting filter
   eleventyConfig.addFilter("isodate", (date) => {
     if (!date) return "";

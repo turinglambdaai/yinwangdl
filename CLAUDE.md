@@ -48,9 +48,15 @@ source: https://www.yinwang.org/posts/mites
 ## scripts
 
 - `crawler.py`：主爬虫。`format_content()` 含自愈链（坏强调修复、顶层缩进代码转围栏、层级规范化、盘古空格），新爬内容自动规范化
-- `fix_bold_spacing.py`：修复 `** 文字 **` 坏强调；`--check` 模式可供 CI 校验，应恒为 0
+- `lint_posts.py`：CI 与本地全量校验（frontmatter 必填字段、正文 H1、坏强调、顶层缩进代码、围栏配对），应恒为 0 错误；crawl.yml 爬取后与 lint.yml（push 触发）都会跑
+- `fix_bold_spacing.py`：修复 `** 文字 **` 坏强调；`--check` 模式供校验
 - `normalize_code_blocks.py`：顶层缩进代码块转围栏；`--check` 模式同理
+- `notify_new_posts.py`：爬取后新文章邮件提醒（SMTP secrets：SMTP_HOST/SMTP_USER/SMTP_PASS/NOTIFY_TO；缺省 dry-run）
 - `migrate_to_slug_filenames.py`：一次性迁移工具（中文文件名 → slug 文件名），2026-09-23 已执行完毕，仅留档
+
+## RSS
+
+`/feed.xml`（Atom，最新 20 篇，标题+链接+140 字摘要，有意不输出全文——内容归原作者）。feed helpers（absoluteUrl/dateToRfc3339 等）在 `.eleventy.js` 手写，无插件依赖。`siteBaseUrl` 默认 `https://yinwang.jrtx.site`（meta.js）。
 
 ## 去重
 

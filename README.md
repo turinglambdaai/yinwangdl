@@ -93,6 +93,27 @@ Body text...
 - The Chinese title lives in frontmatter; the body starts with an H1 heading.
 - Top-level sections use H2; the crawler normalizes heading depth and code fences automatically.
 
+## Update Notifications (optional)
+
+When the weekly crawl finds new posts, the workflow can email you a
+summary so you can decide whether to share them. Configure via repo
+secrets (Settings → Secrets and variables → Actions):
+
+| Secret      | Value                                        |
+| ----------- | -------------------------------------------- |
+| `SMTP_HOST` | e.g. `smtp.qq.com`                           |
+| `SMTP_USER` | the from-account, e.g. `you@qq.com`          |
+| `SMTP_PASS` | SMTP authorization code (not login password) |
+| `NOTIFY_TO` | recipient, usually the same address          |
+
+Without the secrets the step is a harmless dry run.
+
+## RSS
+
+The site publishes an Atom feed at `/feed.xml` (latest 20 posts, title +
+link + short excerpt). Full text is intentionally not re-published —
+the content belongs to its author.
+
 ## License
 
 The code (scripts & workflows) is licensed under the MIT License; the

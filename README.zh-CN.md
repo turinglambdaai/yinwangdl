@@ -93,6 +93,23 @@ source: https://www.yinwang.org/posts/my-blog-post
 - 中文标题存于 frontmatter 的 `title` 字段；正文以 H1 标题开始
 - 大节用 H2；爬虫会自动规范化标题层级与代码围栏
 
+## 新文章提醒（可选）
+
+每周爬取发现新文章时，工作流可给你发一封摘要邮件，方便你决定是否分享到公众号。通过仓库 Secrets 配置（Settings → Secrets and variables → Actions）：
+
+| Secret      | 值                                          |
+| ----------- | ------------------------------------------- |
+| `SMTP_HOST` | 如 `smtp.qq.com`                            |
+| `SMTP_USER` | 发件账号，如 `you@qq.com`                    |
+| `SMTP_PASS` | SMTP 授权码（非登录密码）                    |
+| `NOTIFY_TO` | 收件地址，通常与发件账号相同                  |
+
+未配置时该步骤仅本地输出，无副作用。
+
+## RSS
+
+站点提供 Atom 订阅：`/feed.xml`（最新 20 篇，标题 + 链接 + 简短摘要）。有意不输出全文——内容归原作者所有。
+
 ## 许可证
 
 仓库代码（脚本与工作流）基于 [MIT License](LICENSE) 开源；posts/ 下的博客内容版权归原作者所有，仅供个人存档阅读。

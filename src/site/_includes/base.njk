@@ -7,6 +7,7 @@
   <title>{% if title %}{{ title }} - {% endif %}{{ meta.siteName }}</title>
   <meta name="description" content="{% if excerpt %}{{ excerpt }}{% else %}王垠博客文章备份，自动爬取存档{% endif %}">
   <link rel="canonical" href="{{ meta.siteBaseUrl }}{{ page.url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ meta.siteName }}" href="/feed.xml">
   <meta name="google-adsense-account" content="ca-pub-3215512126020129">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3215512126020129"
     crossorigin="anonymous"></script>
@@ -55,7 +56,11 @@
             <span class="sep">&middot;</span>
             <a href="https://cloud.umami.is/share/XoOzcFrnLbRY6EQH" target="_blank" rel="noopener">访问统计</a>
             <span class="sep">&middot;</span>
-            <a href="https://github.com/turinglambdaai" target="_blank" rel="noopener">站长 GitHub</a>
+            <a href="https://jrtx.site" target="_blank" rel="noopener">站长主页</a>
+            <span class="sep">&middot;</span>
+            <a href="/feed.xml">RSS</a>
+            <span class="sep">&middot;</span>
+            <a href="https://github.com/turinglambdaai" target="_blank" rel="noopener">GitHub</a>
           </p>
         </div>
       </footer>

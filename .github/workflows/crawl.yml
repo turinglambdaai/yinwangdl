@@ -24,6 +24,17 @@ jobs:
       - name: Run crawler
         run: python scripts/crawler.py
 
+      - name: Lint posts
+        run: python scripts/lint_posts.py
+
+      - name: Notify new posts
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+        run: python scripts/notify_new_posts.py
+
       - name: Check for changes
         id: check
         run: |
