@@ -11,8 +11,10 @@
   --shadow: 0 1px 3px rgba(28, 25, 23, 0.06), 0 1px 2px rgba(28, 25, 23, 0.04);
   --shadow-md: 0 4px 6px -1px rgba(28, 25, 23, 0.07), 0 2px 4px -2px rgba(28, 25, 23, 0.05);
   --radius: 12px;
-  --max-w: 780px;
-  --max-w-wide: 820px;
+  /* Content column breathes with the viewport: 780px at 1300px viewport,
+     880px at 1920px+, capped to keep CJK line length readable (~50 chars) */
+  --max-w: clamp(780px, calc(16.1vw + 571px), 880px);
+  --max-w-wide: 940px;
 }
 
 @media (prefers-color-scheme: dark) {
