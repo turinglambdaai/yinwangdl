@@ -258,6 +258,14 @@ a:hover { color: var(--accent-hover); }
   text-wrap: pretty;
 }
 
+/* CJK body text justifies cleanly (standard for Chinese reading apps);
+   ragged right made the column look unfinished on the right edge */
+.post-content p,
+.post-content li {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
 .post-content h2,
 .post-content h3 {
   scroll-margin-top: 20px;
@@ -441,6 +449,7 @@ a:hover { color: var(--accent-hover); }
 /* ---- Responsive ---- */
 
 @media (max-width: 640px) {
+  .container { padding: 0 20px; }
   .site-header { padding: 32px 0 28px; }
   .post-header h1 { font-size: 1.45em; }
   .post-content { font-size: 16px; line-height: 1.9; }
