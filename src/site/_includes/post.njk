@@ -1,6 +1,19 @@
 ---
 layout: base.njk
+ogType: article
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ title | dump | safe }},
+  "datePublished": {{ created | dump | safe }},
+  "author": { "@type": "Person", "name": {{ (author or "王垠") | dump | safe }} },
+  "publisher": { "@type": "Organization", "name": "王垠博客备份" },
+  "mainEntityOfPage": {{ (meta.siteBaseUrl ~ page.url) | dump | safe }},
+  "inLanguage": "zh-CN"
+}
+</script>
 <article class="post">
   <a href="/" class="post-back">&larr; 返回列表</a>
   <header class="post-header">

@@ -5,7 +5,19 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} - {% endif %}{{ meta.siteName }}</title>
-  <meta name="description" content="{% if excerpt %}{{ excerpt }}{% else %}王垠博客文章备份，自动爬取存档{% endif %}">
+  <meta name="description" content="{{ description or '王垠博客文章备份与检索，自动同步 yinwang.org，版权归原作者所有' }}">
+  {% if description %}
+  <meta property="og:title" content="{{ title }} - {{ meta.siteName }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ meta.siteBaseUrl }}{{ page.url }}">
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:site_name" content="{{ meta.siteName }}">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary">
+  {% if created %}
+  <meta property="article:published_time" content="{{ created }}">
+  {% endif %}
+  {% endif %}
   <link rel="canonical" href="{{ meta.siteBaseUrl }}{{ page.url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ meta.siteName }}" href="/feed.xml">
   <meta name="google-adsense-account" content="ca-pub-3215512126020129">
